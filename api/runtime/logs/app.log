@@ -1,0 +1,151 @@
+2014-09-25 09:59:34 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "cron/cron/init".' in /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('cron/cron/init', Array)
+#1 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('cron/cron/init', Array)
+#2 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /Applications/MAMP/htdocs/googlemuseums/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "cron/cron/init".' in /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('cron/cron/init', Array)
+#1 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Applications/MAMP/htdocs/googlemuseums/yii(23): yii\base\Application->run()
+#3 {main}
+2014-09-25 09:59:33 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-E8scOo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'B6B365A1-B246-4569-8A56-CF5611819AB0'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-RtN6SL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    '__CHECKFIX1436934' => '1'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    'PWD' => '/Applications/MAMP/htdocs/googlemuseums'
+    'LANG' => 'ru_RU.UTF-8'
+    'HOME' => '/Users/spiker'
+    'SHLVL' => '1'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-kdiUpm/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a4'
+    '_' => '/Applications/MAMP/bin/php/php5.5.10/bin/php'
+    'OLDPWD' => '/'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1411631973.97
+    'REQUEST_TIME' => 1411631973
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cron/init'
+    ]
+    'argc' => 2
+]
+2014-09-25 10:00:44 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "cron/rbac/init".' in /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('cron/rbac/init', Array)
+#1 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('cron/rbac/init', Array)
+#2 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /Applications/MAMP/htdocs/googlemuseums/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "cron/rbac/init".' in /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('cron/rbac/init', Array)
+#1 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Applications/MAMP/htdocs/googlemuseums/yii(23): yii\base\Application->run()
+#3 {main}
+2014-09-25 10:00:44 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-E8scOo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'B6B365A1-B246-4569-8A56-CF5611819AB0'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-RtN6SL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    '__CHECKFIX1436934' => '1'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    'PWD' => '/Applications/MAMP/htdocs/googlemuseums'
+    'LANG' => 'ru_RU.UTF-8'
+    'HOME' => '/Users/spiker'
+    'SHLVL' => '1'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-kdiUpm/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a4'
+    '_' => '/Applications/MAMP/bin/php/php5.5.10/bin/php'
+    'OLDPWD' => '/'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1411632044.26
+    'REQUEST_TIME' => 1411632044
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/rbac/init'
+    ]
+    'argc' => 2
+]
+2014-09-25 10:00:48 [-][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'file_put_contents(/Applications/MAMP/htdocs/googlemuseums/rbac/items.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/rbac/PhpManager.php:697
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_put_conten...', '/Applications/M...', 697, Array)
+#1 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/rbac/PhpManager.php(697): file_put_contents('/Applications/M...', '<?php?return [?...', 2)
+#2 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/rbac/PhpManager.php(723): yii\rbac\PhpManager->saveToFile(Array, '/Applications/M...')
+#3 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/rbac/PhpManager.php(602): yii\rbac\PhpManager->saveItems()
+#4 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/rbac/BaseManager.php(118): yii\rbac\PhpManager->addItem(Object(yii\rbac\Permission))
+#5 /Applications/MAMP/htdocs/googlemuseums/commands/RbacController.php(17): yii\rbac\BaseManager->add(Object(yii\rbac\Permission))
+#6 [internal function]: app\commands\RbacController->actionInit()
+#7 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('init', Array)
+#10 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('init', Array)
+#11 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('rbac/init', Array)
+#12 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('rbac/init', Array)
+#13 /Applications/MAMP/htdocs/googlemuseums/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#14 /Applications/MAMP/htdocs/googlemuseums/yii(23): yii\base\Application->run()
+#15 {main}
+2014-09-25 10:00:48 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-E8scOo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'B6B365A1-B246-4569-8A56-CF5611819AB0'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-RtN6SL/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    '__CHECKFIX1436934' => '1'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    'PWD' => '/Applications/MAMP/htdocs/googlemuseums'
+    'LANG' => 'ru_RU.UTF-8'
+    'HOME' => '/Users/spiker'
+    'SHLVL' => '1'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-kdiUpm/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a4'
+    '_' => '/Applications/MAMP/bin/php/php5.5.10/bin/php'
+    'OLDPWD' => '/'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1411632048.71
+    'REQUEST_TIME' => 1411632048
+    'argv' => [
+        0 => 'yii'
+        1 => 'rbac/init'
+    ]
+    'argc' => 2
+]
