@@ -1,0 +1,24 @@
+{
+  "name": "gulp_experiments_bower",
+  "version": "0.0.0",
+  "homepage": "https://github.com/maxfarseer/gulp-experiments",
+  "authors": [
+    "Max Patsiansky <maxfarseer@gmail.com>"
+  ],
+  "description": "my boilerplate with bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.25",
+    "jquery": "~2.1.1",
+    "angular-resource": "~1.2.25",
+    "ui-router": "~0.2.11",
+    "lodash": "~2.4.1"
+  }
+}

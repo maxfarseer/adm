@@ -1,0 +1,6 @@
+.Trash-1000
+.DS_Store
+._*
+/node_modules
+/builds
+/bower_components

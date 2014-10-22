@@ -1,0 +1,41 @@
+doctype html
+html(ng-app="app")
+  head
+    title App
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/main.css")
+  body
+
+    div.container.padmin
+      header
+        nav.navbar.navbar-inverse(role='navigation')
+          .navbar-header
+              a.navbar-brand(ui-sref='home') ADM'15
+            ul.nav.navbar-nav
+              li
+                a(ui-sref='home') Home
+              li
+                a(ui-sref='data') Data
+
+      div(ui-view)
+      footer
+
+    //- dev libs
+    //- script(src='../../bower_components/jquery/dist/jquery.js')
+    //- script(src='../../bower_components/angular/angular.js')
+    //- script(src='../../bower_components/angular-resource/angular-resource.js')
+    //- script(src='../../bower_components/ui-router/release/angular-ui-router.js')
+
+    //- dev angular
+
+    //- script(src='../../src/js/main.js')
+
+    //- script(src='../../src/js/services/rest.js')
+
+    //- script(src='../../src/js/controllers/home.js')
+    //- script(src='../../src/js/controllers/data.js')
+
+    //- script(src='../../src/js/directives/my-customer.js')
+
+    script(src='../../builds/development/js/libs.js')
+    script(src='../../builds/development/js/scripts.js')
