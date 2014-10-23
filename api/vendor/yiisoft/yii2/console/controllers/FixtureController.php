@@ -19,13 +19,13 @@ use yii\test\FixtureTrait;
  *
  * ~~~
  * #load fixtures from UsersFixture class with default namespace "tests\unit\fixtures"
- * yii fixture/load User
+ * yii fixture/load Users
  *
  * #also a short version of this command (generate action is default)
- * yii fixture User
+ * yii fixture Users
  *
  * #load fixtures with different namespace.
- * yii fixture/load User --namespace=alias\my\custom\namespace\goes\here
+ * yii fixture/load Users --namespace=alias\my\custom\namespace\goes\here
  * ~~~
  *
  * @author Mark Jebri <mark.github@yandex.ru>
@@ -69,7 +69,7 @@ class FixtureController extends Controller
 
     /**
      * Loads given fixture. You can load several fixtures specifying
-     * their names separated with commas, like: User,UserProfile,MyCustom. Be sure there is no
+     * their names separated with commas, like: Users,UserProfile,MyCustom. Be sure there is no
      * whitespace between names. Note that if you are loading fixtures to storage, for example: database or nosql,
      * storage will not be cleared, data will be appended to already existed.
      * @param array $fixtures
@@ -114,7 +114,7 @@ class FixtureController extends Controller
 
     /**
      * Unloads given fixtures. You can clear environment and unload multiple fixtures by specifying
-     * their names separated with commas, like: User,UserProfile,MyCustom. Be sure there is no
+     * their names separated with commas, like: Users,UserProfile,MyCustom. Be sure there is no
      * whitespace between names.
      * @param array|string $fixtures
      * @param array|string $except

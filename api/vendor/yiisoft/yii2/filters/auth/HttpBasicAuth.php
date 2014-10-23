@@ -44,7 +44,7 @@ class HttpBasicAuth extends AuthMethod
      *
      * ```php
      * function ($username, $password) {
-     *     return \app\models\User::findOne([
+     *     return \app\models\Users::findOne([
      *         'username' => $username,
      *         'password' => $password,
      *     ]);
@@ -52,7 +52,7 @@ class HttpBasicAuth extends AuthMethod
      * ```
      *
      * If this property is not set, the username information will be considered as an access token
-     * while the password information will be ignored. The [[\yii\web\User::loginByAccessToken()]]
+     * while the password information will be ignored. The [[\yii\web\Users::loginByAccessToken()]]
      * method will be called to authenticate and login the user.
      */
     public $auth;

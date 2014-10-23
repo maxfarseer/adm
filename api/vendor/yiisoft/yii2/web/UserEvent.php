@@ -10,7 +10,7 @@ namespace yii\web;
 use yii\base\Event;
 
 /**
- * This event class is used for Events triggered by the [[User]] class.
+ * This event class is used for Events triggered by the [[Users]] class.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
@@ -23,7 +23,7 @@ class UserEvent extends Event
     public $identity;
     /**
      * @var boolean whether the login is cookie-based. This property is only meaningful
-     * for [[User::EVENT_BEFORE_LOGIN]] and [[User::EVENT_AFTER_LOGIN]] events.
+     * for [[Users::EVENT_BEFORE_LOGIN]] and [[Users::EVENT_AFTER_LOGIN]] events.
      */
     public $cookieBased;
     /**
@@ -34,7 +34,7 @@ class UserEvent extends Event
     /**
      * @var boolean whether the login or logout should proceed.
      * Event handlers may modify this property to determine whether the login or logout should proceed.
-     * This property is only meaningful for [[User::EVENT_BEFORE_LOGIN]] and [[User::EVENT_BEFORE_LOGOUT]] events.
+     * This property is only meaningful for [[Users::EVENT_BEFORE_LOGIN]] and [[Users::EVENT_BEFORE_LOGOUT]] events.
      */
     public $isValid = true;
 }

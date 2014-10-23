@@ -37,13 +37,13 @@ class AccessRule extends Component
     public $controllers;
     /**
      * @var array list of roles that this rule applies to. Two special roles are recognized, and
-     * they are checked via [[User::isGuest]]:
+     * they are checked via [[Users::isGuest]]:
      *
      * - `?`: matches a guest user (not authenticated yet)
      * - `@`: matches an authenticated user
      *
      * Using other role names requires RBAC (Role-Based Access Control), and
-     * [[User::can()]] will be called.
+     * [[Users::can()]] will be called.
      *
      * If this property is not set or empty, it means this rule applies to all roles.
      */

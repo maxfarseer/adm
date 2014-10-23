@@ -10,7 +10,7 @@
  *      Front list: 1 2 3 4
  *      Back list: 9 8 7 6
  *
- * User is expected to keep track of the "current element" and properly
+ * Users is expected to keep track of the "current element" and properly
  * fill it back in as necessary.  (ToDo: Maybe it's more user friendly
  * to implicitly track the current element?)
  *

@@ -2,7 +2,7 @@
 return [
     'user' => [
         'type' => 1,
-        'description' => 'User',
+        'description' => 'Users',
         'ruleName' => 'group',
     ],
     'moderator' => [

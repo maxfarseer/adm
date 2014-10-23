@@ -7,6 +7,6 @@ return [
     'dsn' => 'mysql:host='.$db_acc['DB_HOST'].';dbname='.$db_acc['DB_NAME'],
     'username' => $db_acc['DB_USER'],
     'password' => $db_acc['DB_PASSWORD'],
-    'tablePrefix'=>'org_',
+    'tablePrefix'=>'adm_',
     'charset' => 'utf8',
 ];

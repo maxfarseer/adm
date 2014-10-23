@@ -7,7 +7,7 @@ use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use Yii;
-use app\modules\admin\views;
+
 class DefaultController extends Controller
 {
     public function behaviors()
@@ -29,6 +29,11 @@ class DefaultController extends Controller
                     ],
                 ],
             ],
+            'eauth' => array(
+                // required to disable csrf validation on OpenID requests
+                'class' => \nodge\eauth\openid\ControllerBehavior::className(),
+                'only' => array('login'),
+            ),
 //            'verbs' => [
 //                'class' => VerbFilter::className(),
 //                'actions' => [
@@ -41,7 +46,39 @@ class DefaultController extends Controller
     public function actionLogin()
     {
 
-        $this->layout='@app/modules/admin/views/layouts/admin';
+        $serviceName = Yii::$app->getRequest()->getQueryParam('service');
+        if (isset($serviceName)) {
+            /** @var $eauth \nodge\eauth\ServiceBase */
+            $eauth = Yii::$app->get('eauth')->getIdentity($serviceName);
+            $eauth->setRedirectUrl(Yii::$app->getUser()->getReturnUrl());
+            $eauth->setCancelUrl(Yii::$app->getUrlManager()->createAbsoluteUrl('site/login'));
+
+            try {
+                if ($eauth->authenticate()) {
+//                  var_dump($eauth->getIsAuthenticated(), $eauth->getAttributes()); exit;
+
+                    $identity = User::findByEAuth($eauth);
+                    Yii::$app->getUser()->login($identity);
+
+                    // special redirect with closing popup window
+                    $eauth->redirect();
+                }
+                else {
+                    // close popup window and redirect to cancelUrl
+                    $eauth->cancel();
+                }
+            }
+            catch (\nodge\eauth\ErrorException $e) {
+                // save error to show it later
+                Yii::$app->getSession()->setFlash('error', 'EAuthException: '.$e->getMessage());
+
+                // close popup window and redirect to cancelUrl
+//              $eauth->cancel();
+                $eauth->redirect($eauth->getCancelUrl());
+            }
+        }
+        /////
+//        $this->layout='@app/modules/admin/views/layouts/admin';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -68,7 +105,7 @@ class DefaultController extends Controller
 
     public function actionSignup()
     {
-        $model = new User();
+        $model = new Users();
 
         if ($model->load(Yii::$app->request->post())) {
             $model->setScenario('signup');

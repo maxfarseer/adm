@@ -19,7 +19,7 @@ use yii\base\InvalidRouteException;
  *
  * - A console application consists of one or several possible user commands;
  * - Each user command is implemented as a class extending [[\yii\console\Controller]];
- * - User specifies which command to run on the command line;
+ * - Users specifies which command to run on the command line;
  * - The command processes the user request with the specified parameters.
  *
  * The command classes should be under the namespace specified by [[controllerNamespace]].

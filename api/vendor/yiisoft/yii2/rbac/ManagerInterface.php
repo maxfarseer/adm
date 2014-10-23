@@ -16,7 +16,7 @@ interface ManagerInterface
     /**
      * Checks if the user has the specified permission.
      * @param string|integer $userId the user ID. This should be either an integer or a string representing
-     * the unique identifier of a user. See [[\yii\web\User::id]].
+     * the unique identifier of a user. See [[\yii\web\Users::id]].
      * @param string $permissionName the name of the permission to be checked against
      * @param array $params name-value pairs that will be passed to the rules associated
      * with the roles and permissions assigned to the user.
@@ -83,7 +83,7 @@ interface ManagerInterface
     /**
      * Returns the roles that are assigned to the user via [[assign()]].
      * Note that child roles that are not assigned directly to the user will not be returned.
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @return Role[] all roles directly or indirectly assigned to the user. The array is indexed by the role names.
      */
     public function getRolesByUser($userId);
@@ -110,7 +110,7 @@ interface ManagerInterface
 
     /**
      * Returns all permissions that the user has.
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @return Permission[] all permissions that the user has. The array is indexed by the permission names.
      */
     public function getPermissionsByUser($userId);
@@ -164,7 +164,7 @@ interface ManagerInterface
      * Assigns a role to a user.
      *
      * @param Role $role
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @return Assignment the role assignment information.
      * @throws \Exception if the role has already been assigned to the user
      */
@@ -173,21 +173,21 @@ interface ManagerInterface
     /**
      * Revokes a role from a user.
      * @param Role $role
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @return boolean whether the revoking is successful
      */
     public function revoke($role, $userId);
 
     /**
      * Revokes all roles from a user.
-     * @param mixed $userId the user ID (see [[\yii\web\User::id]])
+     * @param mixed $userId the user ID (see [[\yii\web\Users::id]])
      * @return boolean whether the revoking is successful
      */
     public function revokeAll($userId);
 
     /**
      * Returns the assignment information regarding a role and a user.
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @param string $roleName the role name
      * @return Assignment the assignment information. Null is returned if
      * the role is not assigned to the user.
@@ -196,7 +196,7 @@ interface ManagerInterface
 
     /**
      * Returns all role assignment information for the specified user.
-     * @param string|integer $userId the user ID (see [[\yii\web\User::id]])
+     * @param string|integer $userId the user ID (see [[\yii\web\Users::id]])
      * @return Assignment[] the assignments indexed by role names. An empty array will be
      * returned if there is no role assigned to the user.
      */

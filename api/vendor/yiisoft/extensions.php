@@ -75,4 +75,14 @@ return array (
                     '@kartik' => $vendorDir . '/kartik-v/yii2-sortable-input',
                 ),
     ),
+    'nodge/yii2-eauth' =>
+        array (
+            'name' => 'nodge/yii2-eauth',
+            'version' => '9999999-dev',
+            'alias' =>
+                array (
+                    '@nodge/eauth' => $vendorDir . '/nodge/yii2-eauth/src',
+                ),
+            'bootstrap' => 'nodge\\eauth\\Bootstrap',
+    ),
    );

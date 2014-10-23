@@ -11,10 +11,10 @@ namespace yii\web;
  * IdentityInterface is the interface that should be implemented by a class providing identity information.
  *
  * This interface can typically be implemented by a user model class. For example, the following
- * code shows how to implement this interface by a User ActiveRecord class:
+ * code shows how to implement this interface by a Users ActiveRecord class:
  *
  * ~~~
- * class User extends ActiveRecord implements IdentityInterface
+ * class Users extends ActiveRecord implements IdentityInterface
  * {
  *     public static function findIdentity($id)
  *     {
@@ -79,7 +79,7 @@ interface IdentityInterface
      *
      * The space of such keys should be big enough to defeat potential identity attacks.
      *
-     * This is required if [[User::enableAutoLogin]] is enabled.
+     * This is required if [[Users::enableAutoLogin]] is enabled.
      * @return string a key that is used to check the validity of a given identity ID.
      * @see validateAuthKey()
      */
@@ -87,7 +87,7 @@ interface IdentityInterface
     /**
      * Validates the given auth key.
      *
-     * This is required if [[User::enableAutoLogin]] is enabled.
+     * This is required if [[Users::enableAutoLogin]] is enabled.
      * @param string $authKey the given auth key
      * @return boolean whether the given auth key is valid.
      * @see getAuthKey()

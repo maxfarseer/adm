@@ -76,18 +76,18 @@ class AdminController extends Controller
 					$this->redirect(array('admin/settings'));
 			}
 			
-			if(isset($_POST['User']))
+			if(isset($_POST['Users']))
 			{
-				if(isset($_POST['User']['pass'])){
-					//$user->attributes=$_POST['User'];
-					$user->pass=$_POST['User']['pass'];	
-					$user->pass_rep=$_POST['User']['pass_rep'];	
-					//print_r($_POST['User']);
+				if(isset($_POST['Users']['pass'])){
+					//$user->attributes=$_POST['Users'];
+					$user->pass=$_POST['Users']['pass'];
+					$user->pass_rep=$_POST['Users']['pass_rep'];
+					//print_r($_POST['Users']);
 					if($user->save(true, array('pass')))
 						 $this->redirect(array('admin/settings'));}
 				
-				if(isset($_POST['User']['email'])){
-					$user->email=$_POST['User']['email'];	
+				if(isset($_POST['Users']['email'])){
+					$user->email=$_POST['Users']['email'];
 					
 					if($user->save(true, array('email')))
 						$this->redirect(array('admin/settings'));}

@@ -73,9 +73,9 @@ use yii\helpers\StringHelper;
  * @property string $serverName Server name. This property is read-only.
  * @property integer $serverPort Server port number. This property is read-only.
  * @property string $url The currently requested relative URL. Note that the URI returned is URL-encoded.
- * @property string $userAgent User agent, null if not present. This property is read-only.
- * @property string $userHost User host name, null if cannot be determined. This property is read-only.
- * @property string $userIP User IP address. Null is returned if the user IP address cannot be detected. This
+ * @property string $userAgent Users agent, null if not present. This property is read-only.
+ * @property string $userHost Users host name, null if cannot be determined. This property is read-only.
+ * @property string $userIP Users IP address. Null is returned if the user IP address cannot be detected. This
  * property is read-only.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>

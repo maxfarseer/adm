@@ -41758,3 +41758,2715 @@ Stack trace:
     'argv' => []
     'argc' => 0
 ]
+2014-10-23 00:14:30 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for /Applications/MAMP/htdocs/adm/api/htdocs/css/style.css' in /Applications/MAMP/htdocs/adm/api/helpers/LoaderFH.php:98
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/views/layouts/main.php(20): app\helpers\LoaderFH::getUrlData()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\View->renderFile()
+#4 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#11 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#12 {main}
+2014-10-23 00:14:29 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '53615'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414008869.98
+    'REQUEST_TIME' => 1414008869
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 00:14:59 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for /Applications/MAMP/htdocs/adm/api/htdocs/css/style.css' in /Applications/MAMP/htdocs/adm/api/helpers/LoaderFH.php:98
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/views/layouts/main.php(20): app\helpers\LoaderFH::getUrlData()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\View->renderFile()
+#4 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#11 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#12 {main}
+2014-10-23 00:14:59 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '53621'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414008899.32
+    'REQUEST_TIME' => 1414008899
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 00:15:13 [127.0.0.1][][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /Applications/MAMP/htdocs/adm/api/modules/admin/views/layouts/admin.php' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\View->renderFile('/Applications/M...', Array, Object(app\modules\user\controllers\DefaultController))
+#1 /Applications/MAMP/htdocs/adm/api/modules/user/controllers/DefaultController.php(58): yii\base\Controller->render('login', Array)
+#2 [internal function]: app\modules\user\controllers\DefaultController->actionLogin()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('login', Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user/default/lo...', Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#9 {main}
+2014-10-23 00:15:13 [127.0.0.1][][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '53624'
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414008913.2
+    'REQUEST_TIME' => 1414008913
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 00:15:55 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'filemtime(): stat failed for /Applications/MAMP/htdocs/adm/api/htdocs/css/style.css' in /Applications/MAMP/htdocs/adm/api/helpers/LoaderFH.php:98
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/views/layouts/main.php(20): app\helpers\LoaderFH::getUrlData()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\View->renderFile()
+#4 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#11 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#12 {main}
+2014-10-23 00:15:55 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '53634'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414008955.76
+    'REQUEST_TIME' => 1414008955
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 15:46:41 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 15:46:41 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072001.25
+    'REQUEST_TIME' => 1414072001
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 15:47:46 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 15:47:46 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072066.03
+    'REQUEST_TIME' => 1414072066
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 15:48:35 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 15:48:35 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072115.32
+    'REQUEST_TIME' => 1414072115
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 15:54:11 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 15:54:11 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072451.55
+    'REQUEST_TIME' => 1414072451
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 15:59:06 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 15:59:05 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072745.84
+    'REQUEST_TIME' => 1414072745
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:01:12 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:01:12 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414072872.26
+    'REQUEST_TIME' => 1414072872
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:04:35 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:04:35 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414073075.18
+    'REQUEST_TIME' => 1414073075
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:11:13 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:11:13 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414073473.73
+    'REQUEST_TIME' => 1414073473
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:11:20 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:11:20 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414073480.64
+    'REQUEST_TIME' => 1414073480
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:11:50 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:11:49 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414073509.88
+    'REQUEST_TIME' => 1414073509
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:12:13 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:12:12 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414073532.89
+    'REQUEST_TIME' => 1414073532
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:25:01 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixtures' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:25:01 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074301.79
+    'REQUEST_TIME' => 1414074301
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:31:00 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:31:00 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074660.52
+    'REQUEST_TIME' => 1414074660
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:32:42 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:32:42 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074762.64
+    'REQUEST_TIME' => 1414074762
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:33:16 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:33:15 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074795.93
+    'REQUEST_TIME' => 1414074795
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:34:01 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:34:01 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074841.71
+    'REQUEST_TIME' => 1414074841
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:35:30 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:35:30 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414074930.35
+    'REQUEST_TIME' => 1414074930
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:43:44 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:43:44 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414075424.71
+    'REQUEST_TIME' => 1414075424
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:44:37 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:44:37 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414075477.62
+    'REQUEST_TIME' => 1414075477
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 16:46:43 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 16:46:43 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414075603.37
+    'REQUEST_TIME' => 1414075603
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 17:00:20 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 17:00:20 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414076420.73
+    'REQUEST_TIME' => 1414076420
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 18:33:54 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:33:54 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082034.47
+    'REQUEST_TIME' => 1414082034
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 18:35:49 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:35:49 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082149.56
+    'REQUEST_TIME' => 1414082149
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 18:35:59 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:35:59 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/basic/web/index-test.php'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/web/index-test.php'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082158.98
+    'REQUEST_TIME' => 1414082158
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+    'SERVER_NAME' => 'localhost'
+]
+2014-10-23 18:40:23 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:40:23 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_FILENAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082423.25
+    'REQUEST_TIME' => 1414082423
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+]
+2014-10-23 18:41:21 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:41:21 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_FILENAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082481.54
+    'REQUEST_TIME' => 1414082481
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+]
+2014-10-23 18:41:48 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:41:48 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_FILENAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082508.26
+    'REQUEST_TIME' => 1414082508
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+]
+2014-10-23 18:42:38 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\tests\unit\fixtures\UserFixture' not found' in /Applications/MAMP/htdocs/adm/api/tests/unit/model/UserTest.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 18:42:37 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_FILENAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414082557.81
+    'REQUEST_TIME' => 1414082557
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+]
+2014-10-23 19:59:49 [][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\modules\user\models\User' not found' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/test/ActiveFixture.php:154
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-23 19:59:48 [][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-Bua7eo/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'TERM_SESSION_ID' => 'DDC4A247-FB27-4646-BFEC-8E28B491BDCA'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-LCy9wl/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-vGGiw7/org.macosforge.xquartz:0'
+    '_' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'OLDPWD' => '/Applications/MAMP/htdocs/yii2/123'
+    'PHP_SELF' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_NAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'SCRIPT_FILENAME' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'PATH_TRANSLATED' => '/Users/spiker/.composer/vendor/bin/codecept'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1414087188.64
+    'REQUEST_TIME' => 1414087188
+    'argv' => [
+        0 => '/Users/spiker/.composer/vendor/bin/codecept'
+        1 => 'run'
+    ]
+    'argc' => 2
+]
+2014-10-23 22:55:32 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class app\modules\user\Module does not exist' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php:408
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct('app\modules\use...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies('app\modules\use...')
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('app\modules\use...', Array, Array)
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('app\modules\use...', Array, Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(361): yii\BaseYii::createObject(Array, Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(514): yii\base\Module->getModule('user')
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(456): yii\base\Module->createController('user/default/lo...')
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user/default/lo...', Array)
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#10 {main}
+2014-10-23 22:55:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '62801'
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414090532.77
+    'REQUEST_TIME' => 1414090532
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 22:56:02 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('users/default/l...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 22:56:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '62815'
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414090562.25
+    'REQUEST_TIME' => 1414090562
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:09:25 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('users/default/l...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:09:25 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '62990'
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414091365.18
+    'REQUEST_TIME' => 1414091365
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:09:40 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'nodge\eauth\Widget' not found' in /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#3 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#10 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#11 {main}
+2014-10-23 23:09:40 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414091380.51
+    'REQUEST_TIME' => 1414091380
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:11:50 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'nodge\eauth\Widget' not found' in /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php:3
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#3 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#10 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#11 {main}
+2014-10-23 23:11:50 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63010'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414091510.43
+    'REQUEST_TIME' => 1414091510
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:12:02 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(3): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:12:02 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63012'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414091522.18
+    'REQUEST_TIME' => 1414091522
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:17:34 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(3): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:17:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63049'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414091854.12
+    'REQUEST_TIME' => 1414091854
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:21:37 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(3): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:21:37 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092097.82
+    'REQUEST_TIME' => 1414092097
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:22:30 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(3): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:22:30 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63079'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092150.25
+    'REQUEST_TIME' => 1414092150
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:22:36 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('users/default/l...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:22:36 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63082'
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092156.31
+    'REQUEST_TIME' => 1414092156
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:23:33 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(3): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:23:33 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092213.27
+    'REQUEST_TIME' => 1414092213
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:23:48 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(2): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:23:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63101'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092228.38
+    'REQUEST_TIME' => 1414092228
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:25:26 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'include(/Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Users.php): failed to open stream: No such file or directory' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:288
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ::spl_autoload_call()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(408): ReflectionClass->__construct()
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(354): yii\di\Container->getDependencies()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/ServiceLocator.php(133): yii\BaseYii::createObject()
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(140): yii\di\ServiceLocator->get()
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/ServiceBase.php(120): yii\web\Application->getUser()
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/openid/Service.php(60): nodge\eauth\ServiceBase->init()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\openid\Service->init()
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#14 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject()
+#15 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity()
+#16 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): yii\base\Object->__construct()
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs()
+#20 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build()
+#21 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get()
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject()
+#23 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(2): yii\base\Widget::widget()
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): ::unknown()
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#27 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render()
+#28 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render()
+#29 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): app\modules\main\controllers\SiteController->actionIndex()
+#30 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array()
+#31 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams()
+#32 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction()
+#33 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction()
+#34 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest()
+#35 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#36 {main}
+2014-10-23 23:25:26 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414092326.85
+    'REQUEST_TIME' => 1414092326
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:41:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/user/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('main/user/defau...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "main/user/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:41:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'service' => 'odnoklassniki'
+    'redirect_uri' => 'http://adm:8888/api/main/user/default/login?service=odnoklassniki'
+    'js' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://adm:8888/api/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63701'
+    'REDIRECT_QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Fmain%2Fuser%2Fdefault%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REDIRECT_URL' => '/api/main/user/default/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Fmain%2Fuser%2Fdefault%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REQUEST_URI' => '/api/main/user/default/login?service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Fmain%2Fuser%2Fdefault%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093291.93
+    'REQUEST_TIME' => 1414093291
+    'argv' => [
+        0 => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Fmain%2Fuser%2Fdefault%2Flogin%3Fservice%3Dodnoklassniki&js='
+    ]
+    'argc' => 1
+]
+2014-10-23 23:41:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "main/user/default/images/favicon.ico".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('main/user/defau...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "main/user/default/images/favicon.ico".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:41:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63701'
+    'REDIRECT_URL' => '/api/main/user/default/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/main/user/default/images/favicon.ico'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093292.31
+    'REQUEST_TIME' => 1414093292
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:45:52 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('users/default/l...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "users/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:45:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'service' => 'odnoklassniki'
+    'redirect_uri' => 'http://adm:8888/api/login?service=odnoklassniki'
+    'js' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://adm:8888/api/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63757'
+    'REDIRECT_QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REQUEST_URI' => '/api/login?service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093552.81
+    'REQUEST_TIME' => 1414093552
+    'argv' => [
+        0 => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    ]
+    'argc' => 1
+]
+2014-10-23 23:46:31 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "uses/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('uses/default/lo...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "uses/default/login".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:46:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'service' => 'odnoklassniki'
+    'redirect_uri' => 'http://adm:8888/api/login?service=odnoklassniki'
+    'js' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://adm:8888/api/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303; _csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63781'
+    'REDIRECT_QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REDIRECT_URL' => '/api/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'REQUEST_URI' => '/api/login?service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093590.99
+    'REQUEST_TIME' => 1414093590
+    'argv' => [
+        0 => 'service=odnoklassniki&redirect_uri=http%3A%2F%2Fadm%3A8888%2Fapi%2Flogin%3Fservice%3Dodnoklassniki&js='
+    ]
+    'argc' => 1
+]
+2014-10-23 23:46:44 [127.0.0.1][][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'app\modules\user\models\LoginForm' in file: /Applications/MAMP/htdocs/adm/api/modules/user/models/LoginForm.php. Namespace missing?' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\modules\use...')
+#1 /Applications/MAMP/htdocs/adm/api/modules/user/controllers/DefaultController.php(86): spl_autoload_call('app\modules\use...')
+#2 [internal function]: app\modules\user\controllers\DefaultController->actionLogin()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('login', Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user/default/lo...', Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#9 {main}
+2014-10-23 23:46:44 [127.0.0.1][][-][info][application] $_COOKIE = [
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'error' => 'EAuthException: invalid_client'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://adm:8888/api/login?service=odnoklassniki&error=invalid_client'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B; PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63783'
+    'REDIRECT_URL' => '/api/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/site/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093604.55
+    'REQUEST_TIME' => 1414093604
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:47:51 [127.0.0.1][][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /Applications/MAMP/htdocs/adm/api/modules/admin/views/layouts/admin.php' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(368): yii\base\View->renderFile('/Applications/M...', Array, Object(app\modules\user\controllers\DefaultController))
+#1 /Applications/MAMP/htdocs/adm/api/modules/user/controllers/DefaultController.php(95): yii\base\Controller->render('login', Array)
+#2 [internal function]: app\modules\user\controllers\DefaultController->actionLogin()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('login', Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('user/default/lo...', Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#9 {main}
+2014-10-23 23:47:51 [127.0.0.1][][-][info][application] $_COOKIE = [
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => 1
+    ]
+    'error' => 'EAuthException: invalid_client'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B; PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63825'
+    'REDIRECT_URL' => '/api/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/site/login'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093671.36
+    'REQUEST_TIME' => 1414093671
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:48:32 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/images/favicon.ico".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/images/fav...', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "site/images/favicon.ico".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-23 23:48:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B; PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '63843'
+    'REDIRECT_URL' => '/api/site/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/site/images/favicon.ico'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093712.89
+    'REQUEST_TIME' => 1414093712
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:53:03 [127.0.0.1][][5e16dcb720aa3ef6b4d0c3d43afdd303][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: nodge\eauth\services\OdnoklassnikiOAuth2Service::client_id' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Object->__set('client_id', '1098102784')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(nodge\eauth\services\OdnoklassnikiOAuth2Service), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('nodge\eauth\ser...', Array, Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('nodge\eauth\ser...', Array, Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity('odnoklassniki')
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('nodge\eauth\Wid...', Array, Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('nodge\eauth\Wid...', Array, Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#15 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(2): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\modules\main\controllers\SiteController))
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render('index', Array, Object(app\modules\main\controllers\SiteController))
+#20 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\modules\main\controllers\SiteController->actionIndex(false)
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('main/site/index', Array)
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#28 {main}
+2014-10-23 23:53:03 [127.0.0.1][][5e16dcb720aa3ef6b4d0c3d43afdd303][info][application] $_COOKIE = [
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'eauth-state-vkontakte' => '1b41ffc9fb996cdc6f4ee8f1ea39209d'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B; PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '64009'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093983.47
+    'REQUEST_TIME' => 1414093983
+    'argv' => []
+    'argc' => 0
+]
+2014-10-23 23:53:05 [127.0.0.1][][5e16dcb720aa3ef6b4d0c3d43afdd303][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: nodge\eauth\services\OdnoklassnikiOAuth2Service::client_id' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php:161
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(518): yii\base\Object->__set('client_id', '1098102784')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(nodge\eauth\services\OdnoklassnikiOAuth2Service), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('nodge\eauth\ser...', Array, Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('nodge\eauth\ser...', Array, Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(263): yii\BaseYii::createObject(Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/EAuth.php(105): nodge\eauth\EAuth->getIdentity('odnoklassniki')
+#8 /Applications/MAMP/htdocs/adm/api/vendor/nodge/yii2-eauth/src/Widget.php(70): nodge\eauth\EAuth->getServices()
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Object.php(107): nodge\eauth\Widget->init()
+#10 [internal function]: yii\base\Object->__construct(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/di/Container.php(147): yii\di\Container->build('nodge\eauth\Wid...', Array, Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('nodge\eauth\Wid...', Array, Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Widget.php(95): yii\BaseYii::createObject(Array)
+#15 /Applications/MAMP/htdocs/adm/api/modules/main/views/site/index.php(2): yii\base\Widget::widget(Array)
+#16 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(315): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#18 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\modules\main\controllers\SiteController))
+#19 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(365): yii\base\View->render('index', Array, Object(app\modules\main\controllers\SiteController))
+#20 /Applications/MAMP/htdocs/adm/api/modules/main/controllers/SiteController.php(35): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\modules\main\controllers\SiteController->actionIndex(false)
+#22 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#23 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#24 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('index', Array)
+#25 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('main/site/index', Array)
+#26 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Applications/MAMP/htdocs/adm/api/index.php(23): yii\base\Application->run()
+#28 {main}
+2014-10-23 23:53:05 [127.0.0.1][][5e16dcb720aa3ef6b4d0c3d43afdd303][info][application] $_COOKIE = [
+    '_csrf' => 'aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s:32:\"ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO\";'
+    'PHPSESSID' => '5e16dcb720aa3ef6b4d0c3d43afdd303'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'eauth-state-vkontakte' => '1b41ffc9fb996cdc6f4ee8f1ea39209d'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'adm:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=aa39db3011645a3a195de54ae5d5c390359af12d893b41eebc3b3943aff7c445s%3A32%3A%22ztHBvrjqdtB9bx0_5PUDAXZyY3a_ZOcO%22%3B; PHPSESSID=5e16dcb720aa3ef6b4d0c3d43afdd303'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'adm'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/index.php'
+    'REMOTE_PORT' => '64010'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414093985.9
+    'REQUEST_TIME' => 1414093985
+    'argv' => []
+    'argc' => 0
+]

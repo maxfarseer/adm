@@ -621,7 +621,7 @@ class ActiveQuery extends Query implements ActiveQueryInterface
      * ```php
      * public function getActiveUsers()
      * {
-     *     return $this->hasMany(User::className(), ['id' => 'user_id'])->onCondition(['active' => true]);
+     *     return $this->hasMany(Users::className(), ['id' => 'user_id'])->onCondition(['active' => true]);
      * }
      * ```
      *

@@ -244,7 +244,7 @@ class BaseUrl
      * @param string|array $url the URL to remember. Please refer to [[to()]] for acceptable formats.
      * If this parameter is not specified, the currently requested URL will be used.
      * @param string $name the name associated with the URL to be remembered. This can be used
-     * later by [[previous()]]. If not set, it will use [[\yii\web\User::returnUrlParam]].
+     * later by [[previous()]]. If not set, it will use [[\yii\web\Users::returnUrlParam]].
      * @see previous()
      */
     public static function remember($url = '', $name = null)
@@ -262,7 +262,7 @@ class BaseUrl
      * Returns the URL previously [[remember()|remembered]].
      *
      * @param string $name the named associated with the URL that was remembered previously.
-     * If not set, it will use [[\yii\web\User::returnUrlParam]].
+     * If not set, it will use [[\yii\web\Users::returnUrlParam]].
      * @return string the URL previously remembered. Null is returned if no URL was remembered with the given name.
      * @see remember()
      */

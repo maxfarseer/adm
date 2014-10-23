@@ -6,7 +6,7 @@ use Yii;
 use yii\rbac\Rule;
 
 /**
- * User group rule class.
+ * Users group rule class.
  */
 class GroupRule extends Rule
 {

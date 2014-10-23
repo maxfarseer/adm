@@ -26,7 +26,7 @@ class RbacController extends Controller
 
         // Roles
         $user = $auth->createRole('user');
-        $user->description = 'User';
+        $user->description = 'Users';
         $user->ruleName = $groupRule->name;
         $auth->add($user);
 

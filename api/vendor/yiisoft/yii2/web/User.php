@@ -13,7 +13,7 @@ use yii\base\InvalidConfigException;
 use yii\base\InvalidValueException;
 
 /**
- * User is the class for the "user" application component that manages the user authentication status.
+ * Users is the class for the "user" application component that manages the user authentication status.
  *
  * You may use [[isGuest]] to determine whether the current user is a guest or not.
  * If the user is a guest, the [[identity]] property would return null. Otherwise, it would
@@ -26,11 +26,11 @@ use yii\base\InvalidValueException;
  * - [[setIdentity()]]: changes the user identity without touching session or cookie.
  *   This is best used in stateless RESTful API implementation.
  *
- * Note that User only maintains the user authentication status. It does NOT handle how to authenticate
+ * Note that Users only maintains the user authentication status. It does NOT handle how to authenticate
  * a user. The logic of how to authenticate a user should be done in the class implementing [[IdentityInterface]].
  * You are also required to set [[identityClass]] with the name of this class.
  *
- * User is configured as an application component in [[\yii\web\Application]] by default.
+ * Users is configured as an application component in [[\yii\web\Application]] by default.
  * You can access that instance via `Yii::$app->user`.
  *
  * You can modify its configuration by adding an array to your application config under `components`
@@ -38,7 +38,7 @@ use yii\base\InvalidValueException;
  *
  * ~~~
  * 'user' => [
- *     'identityClass' => 'app\models\User', // User must implement the IdentityInterface
+ *     'identityClass' => 'app\models\Users', // Users must implement the IdentityInterface
  *     'enableAutoLogin' => true,
  *     // 'loginUrl' => ['user/login'],
  *     // ...
@@ -148,10 +148,10 @@ class User extends Component
         parent::init();
 
         if ($this->identityClass === null) {
-            throw new InvalidConfigException('User::identityClass must be set.');
+            throw new InvalidConfigException('Users::identityClass must be set.');
         }
         if ($this->enableAutoLogin && !isset($this->identityCookie['name'])) {
-            throw new InvalidConfigException('User::identityCookie must contain the "name" element.');
+            throw new InvalidConfigException('Users::identityCookie must contain the "name" element.');
         }
     }
 
@@ -234,9 +234,9 @@ class User extends Component
             $id = $identity->getId();
             $ip = Yii::$app->getRequest()->getUserIP();
             if ($this->enableSession) {
-                $log = "User '$id' logged in from $ip with duration $duration.";
+                $log = "Users '$id' logged in from $ip with duration $duration.";
             } else {
-                $log = "User '$id' logged in from $ip. Session not enabled.";
+                $log = "Users '$id' logged in from $ip. Session not enabled.";
             }
             Yii::info($log, __METHOD__);
             $this->afterLogin($identity, false, $duration);
@@ -300,7 +300,7 @@ class User extends Component
             if ($this->beforeLogin($identity, true, $duration)) {
                 $this->switchIdentity($identity, $this->autoRenewCookie ? $duration : 0);
                 $ip = Yii::$app->getRequest()->getUserIP();
-                Yii::info("User '$id' logged in from $ip via cookie.", __METHOD__);
+                Yii::info("Users '$id' logged in from $ip via cookie.", __METHOD__);
                 $this->afterLogin($identity, true, $duration);
             }
         } else {
@@ -323,7 +323,7 @@ class User extends Component
             $this->switchIdentity(null);
             $id = $identity->getId();
             $ip = Yii::$app->getRequest()->getUserIP();
-            Yii::info("User '$id' logged out from $ip.", __METHOD__);
+            Yii::info("Users '$id' logged out from $ip.", __METHOD__);
             if ($destroySession && $this->enableSession) {
                 Yii::$app->getSession()->destroy();
             }

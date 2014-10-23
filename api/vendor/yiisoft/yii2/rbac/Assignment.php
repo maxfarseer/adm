@@ -20,7 +20,7 @@ use yii\base\Object;
 class Assignment extends Object
 {
     /**
-     * @var string|integer user ID (see [[\yii\web\User::id]])
+     * @var string|integer user ID (see [[\yii\web\Users::id]])
      */
     public $userId;
     /**

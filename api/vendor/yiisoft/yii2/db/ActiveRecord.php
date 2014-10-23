@@ -56,12 +56,12 @@ use yii\helpers\StringHelper;
  * Here is a short teaser how working with an ActiveRecord looks like:
  *
  * ```php
- * $user = new User();
+ * $user = new Users();
  * $user->name = 'Qiang';
  * $user->save();  // a new row is inserted into user table
  *
  * // the following will retrieve the user 'CeBe' from the database
- * $user = User::find()->where(['name' => 'CeBe'])->one();
+ * $user = Users::find()->where(['name' => 'CeBe'])->one();
  *
  * // this will get related records from orders table when relation is defined
  * $orders = $user->orders;

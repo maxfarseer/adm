@@ -17,7 +17,6 @@ use app\helpers\LoaderFH;
 
     <title><?=Html::encode($this->title)?></title>
 
-    <? $this->registerCssFile(LoaderFH::getUrlData('css/style.css'))?>
 
     <link id="favicon" type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
 

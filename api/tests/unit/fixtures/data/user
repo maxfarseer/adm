@@ -1,0 +1,9 @@
+<?php
+return [
+    'user1' => [
+        'email' => 'strosin.vernice@jerde.com',
+    ],
+    'user2' => [
+        'email' => 'aileen.barton@heaneyschumm.com',
+    ],
+];
