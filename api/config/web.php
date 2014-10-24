@@ -144,9 +144,10 @@ $config = [
                 '' => 'main/site/index',
                 '/<id:\d+>' => 'main/site/index/',
                 'contact' => 'contact/default/index',
+                'signup' => 'user/default/signup',
                 'login' => 'user/default/login',
+                'logout' => 'user/default/logout',
                 'site/login' => 'user/default/login',
-                'logout' => 'site/logout',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',
 

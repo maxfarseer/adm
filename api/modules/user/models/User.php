@@ -42,8 +42,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             [['pass','email'], 'filter', 'filter' => 'trim'],
             [['status'], 'integer'],
             [['pass'], 'required'],
-            [['pass2'], 'required', 'on'=>'signup'],
-            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
+//            [['pass2'], 'required', 'on'=>'signup'],
+//            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
             ['email', 'unique', 'message' => 'e-mail уже зарегистрирован'],
             [['email'], 'string', 'max' => 20],
             [['pass'], 'string', 'max' => 70],
@@ -54,7 +54,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     public function scenarios()
     {
         $scenarios = parent::scenarios();
-        $scenarios['signup'] = ['pass','pass2','email'];
+        $scenarios['signup'] = ['pass','email'];
         return $scenarios;
     }
 
@@ -82,7 +82,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             return new self(Yii::$app->getSession()->get('user-'.$id));
         }
         else {
-            return isset(self::$users[$id]) ? new self(self::$users[$id]) : null;
+            return static::findOne(['id' => $id]);
+//            return isset(self::$users[$id]) ? new self(self::$users[$id]) : null;
         }
     }
 
