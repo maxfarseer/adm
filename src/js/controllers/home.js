@@ -15,6 +15,17 @@ function homeCtrl($scope, restService) {
     this.weatherData = data;
   };
 
+  this.signupEnd = function(data) {
+    this.signupEnd = data;
+  };
+
+  this.signup = function(form) {
+    console.log(form);
+    restService.signup.load().$promise.then(function(data) {
+      self.signupEnd(data);
+    });
+  }
+
 }
 
 angular.module('app')
