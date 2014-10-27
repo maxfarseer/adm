@@ -9,6 +9,8 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use Yii;
 use yii\web\Response;
+
+use yii\rest\ActiveController;
 class DefaultController extends ActiveController
 {
     const STATUS_OK = 200;
@@ -57,6 +59,7 @@ class DefaultController extends ActiveController
 
     public function actionLogin()
     {
+
         Yii::$app->response->format = Response::FORMAT_JSON;
         $serviceName = Yii::$app->getRequest()->getQueryParam('service');
 
