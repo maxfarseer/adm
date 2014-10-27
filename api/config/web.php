@@ -148,6 +148,7 @@ $config = [
                 'logout' => 'user/default/logout',
                 'getusers' => 'user/default/allusers',
                 'test' => 'user/default/test',
+                'userinfo' => 'user/default/userinfo',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',
 

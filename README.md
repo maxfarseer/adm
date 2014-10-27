@@ -58,3 +58,27 @@ GETUSERS
         JSON {"status": "...", "data": ...}
         status: 0 - error
                 200 - OK
+
+TEST
+    request
+        GET api/test
+
+    answer
+        JSON {"data":{"BD":"..","GET":[],"POST":[]},"status":..}
+
+        status: 0 - error
+                200 - OK
+
+        BD: YES - connect
+            NO  - bad connect
+
+USERINFO
+    request
+        GET api/userinfo
+
+    answer
+        JSON {"data":{"email":"...","f_name":"...","s_name":"...","address":"..."},"status":...}
+
+        status: 403 - no access
+                0 - error
+                200 - OK

@@ -1,5 +1,4 @@
 <?php
-
 defined('DATA_PATH') or define('DATA_PATH',__DIR__.'/data');
 defined('BASE_PATH') or define('BASE_PATH',dirname(__FILE__));
 

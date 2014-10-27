@@ -5,7 +5,7 @@ namespace app\modules\main\controllers;
 use app\helpers\LoaderFH;
 use Yii;
 use yii\base\ErrorException;
-use app\models\Point;
+use app\modules\user\models\User;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -29,10 +29,13 @@ class SiteController extends Controller
      */
     public function actionIndex($id=false)
     {
+        print_r(User::find()
+            ->select('email')
+            ->where(['id'=>Yii::$app->user->id])
+            ->asArray()
+            ->one());
 
-
-        return $this->render('index',
-            []);
+        return $this->render('index');
     }
 
     /*

@@ -18,22 +18,55 @@ class UserTest extends DbTestCase
         ];
     }
 
+    public function UserLogin()
+    {
+        $model = new LoginForm();
+
+        $model-> username = 'nikozor@ya.ru';
+        $model-> password = '123';
+
+        $this->assertTrue($this->isGuest());
+        $this->assertTrue($model->login());
+        $this->assertFalse($this->isGuest());
+
+    }
+
+
+    public function testInfoUser()
+    {
+        $this->UserLogin();
+
+        $attr = ['email'=>'nikozor@ya.ru','f_name'=>'Никита','s_name'=>'Зорин','address'=>'Киров'];
+        $model = User::getInfo();
+
+        $this->assertEquals($attr,$model);
+
+        \Yii::$app->user->logout();
+        $model = User::getInfo();
+
+        $this->assertFalse($model);
+
+    }
 
     /**
-//     * @dataProvider providerGetUser
+     * @dataProvider providerGetUser
      */
-    public function testApprove($email, $pass, $status)
+    public function testSave($email, $pass, $status)
     {
         $this->assertTrue(true);
     }
 
     public function providerGetUser(){
         return [
-            [0, 0, false],
+            [0, 0, 0],
             [0, 1, 1],
             [1, 'yy', 1],
             [1, 'u', '']
         ];
+    }
+
+    public function isGuest(){
+        return \Yii::$app->user->isGuest;
     }
 
 }

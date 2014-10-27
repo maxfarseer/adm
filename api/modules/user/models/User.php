@@ -40,14 +40,16 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         return [
             [['pass','email'], 'filter', 'filter' => 'trim'],
-            [['status'], 'integer'],
+            [['status', 'id_fester', 'good'], 'integer'],
             [['pass','email','status','role'], 'required'],
 //            [['pass2'], 'required', 'on'=>'signup'],
 //            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
             ['email', 'unique', 'message' => 'e-mail уже зарегистрирован'],
             [['email'], 'string', 'max' => 20],
             [['pass'], 'string', 'max' => 70],
-            [['role'], 'string', 'max' => 10]
+            [['f_name','s_name'], 'string', 'max' => 50],
+            [['address'], 'string', 'max' => 300],
+            [['role','ref'], 'string', 'max' => 10]
         ];
     }
 
@@ -69,6 +71,14 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             'role' => 'Role',
             'status' => 'Status',
             'username' => 'Логин',
+            'ref' => 'ref',
+            'date_reg' => 'Логин',
+            'date_login' => 'Логин',
+            'f_name' => 'Имя',
+            's_name' => 'Фамилия',
+            'address' => 'Адрес',
+            'id_fester' => 'кого поздравить',
+            'good' => 'молодцом',
         ];
     }
 
@@ -109,7 +119,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public static function findByUsername($username)
     {
-        return User::findOne(['email' => $username]);
+        return User::find()->where('email = "'.$username.'" and status > 0')->one();
     }
 
 
@@ -180,6 +190,21 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         }
 
         return null;
+    }
+
+    /*
+     * Info user
+     */
+    public static function getInfo()
+    {
+        if(!Yii::$app->user->isGuest){
+            return User::find()
+                ->select(['email','f_name','s_name','address'])
+                ->where(['id'=>Yii::$app->user->id])
+                ->asArray()
+                ->one();
+        } else
+            return false;
     }
 
     /**

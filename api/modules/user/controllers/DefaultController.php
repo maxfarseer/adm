@@ -14,6 +14,7 @@ use yii\rest\ActiveController;
 class DefaultController extends ActiveController
 {
     const STATUS_OK = 200;
+    const NO_ACCESS = 403;
     const STATUS_BAD = 0;
 
     public $enableCsrfValidation = false;
@@ -51,7 +52,7 @@ class DefaultController extends ActiveController
 //            'verbs' => [
 //                'class' => VerbFilter::className(),
 //                'actions' => [
-//                    'logout' => ['post'],
+//                    'userinfo' => ['post'],
 //                ],
 //            ],
         ];
@@ -101,7 +102,7 @@ class DefaultController extends ActiveController
 
             $model = new LoginForm();
 
-            if (!Yii::$app->request->post())
+            if (!Yii::$app->request->isPost)
                 throw new Exception('Неверный метод!', self::STATUS_BAD);
 
             $attr = Yii::$app->request->post();
@@ -109,7 +110,7 @@ class DefaultController extends ActiveController
             $model->password = $attr['pass'];
 
                 if(!$model->login())
-                    throw new Exception('Авторизационные данные не верны!', self::STATUS_BAD);
+                    throw new Exception('Авторизационные данные не верны или бан!', self::STATUS_BAD);
 
                 $answer['data'] = 'Авторизован успешно';
                 $answer['status'] = self::STATUS_OK;
@@ -141,12 +142,18 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
+    /*
+     * All Users
+     */
     public function actionAllusers()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
         try{
-            $model = User::find()->asArray()->all();
+            $model = User::find()
+                ->select(['f_name','s_name'])
+                ->asArray()
+                ->all();
 
             $answer['data'] = $model;
             $answer['status'] = self::STATUS_OK;
@@ -159,6 +166,35 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
+    /*
+     * get user info or false
+     */
+    public function actionUserinfo()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        try{
+            if(!Yii::$app->request->isPost)
+                throw new Exception('Only POST!', self::STATUS_BAD);
+
+            $model = User::getInfo();
+            if(!$model)
+                throw new Exception('Авторизуйтесь!', self::NO_ACCESS);
+
+            $answer['data'] = $model;
+            $answer['status'] = self::STATUS_OK;
+
+        } catch (Exception $e) {
+            $answer['data'] = $e->getMessage();
+            $answer['status'] = $e->getCode();
+        }
+
+        return $answer;
+    }
+
+    /*
+     * registration
+     */
     public function actionSignup()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
@@ -199,6 +235,9 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
+    /*
+     * test method api
+     */
     public function actionTest()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;

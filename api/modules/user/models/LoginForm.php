@@ -69,7 +69,9 @@ class LoginForm extends Model
 //        print_r($usr->getId());
 
         if ($this->validate()) {
-            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0);
+            $model = Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600*24*30 : 0);
+            if($model)  User::updateAll(['date_login'=>date('Y-m-d H:i:s')],['id'=>Yii::$app->user->id]);
+            return $model;
         } else {
 
             return false;
