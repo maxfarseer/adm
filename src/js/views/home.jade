@@ -11,7 +11,7 @@
 .row
   .col-md-12
     h4 Пользователи
-    div(ng-repeat="user in home.users") {{user.id}} | {{user.email}}
+    div(ng-repeat="user in home.users") {{user.id}} | {{user.email}} | {{user.role}}
 
 h4 signup [POST]
 .row
@@ -24,7 +24,22 @@ h4 signup [POST]
         label(for='pass') Password
         input#pass.form-control(ng-model='form.pass', type='password', name='pass', placeholder='Password')
 
-      button.btn.btn-default(ng-click="home.signup(form)") Submit
-    //- button.btn.btn-default(type='submit') Submit
+      button.btn.btn-success(ng-click="home.signup(form)" ng-disabled="!form.email || !form.pass") Зарегистрироваться
+
+h4 login
 .row
-  .col-md-12 {{home.signupEnd}}
+  .col-md-12
+    form(role='form')
+      .form-group
+        label(for='email') Email address
+        input#email.form-control(ng-model='login.email', type='email', name='email', placeholder='Enter email')
+      .form-group
+        label(for='pass') Password
+        input#pass.form-control(ng-model='login.pass', type='password', name='pass', placeholder='Password')
+
+      button.btn.btn-success(ng-click="home.login(login)" ng-disabled="!login.email || !login.pass") Войти
+
+h4 logout
+.row
+  .col-md-12
+    button.btn.btn-success(ng-click="home.logout()") Выйти

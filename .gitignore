@@ -6,3 +6,5 @@
 /bower_components
 /api/data
 npm-debug.log
+
+api/vendor/vova07/yii2-rbac-module/data/assignments.php

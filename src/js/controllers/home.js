@@ -2,31 +2,38 @@
 /**
  * @ngInject
  */
-function homeCtrl($scope, $resource, restService) {
+function homeCtrl($scope, restService) {
   var self = this;
 
   this.test = 'Angular.js works';
 
-  restService.getUsers.load().$promise.then(function(data) {
-    console.log(data);
-    self.users = data.data;
-  });
+  function getUsers() {
+    restService.getUsers.load().$promise.then(function(data) {
+      self.users = data.data;
+    });
+  }
+
+  getUsers();
 
   this.signup = function(form) {
-    // console.log($resource);
-    console.log(form);
-
-    /*var CreditCard = $resource('http://localhost:8888/api/signup/',
-      {userId:123, cardId:'@id'}, {
-      charge: {method:'POST', params:{charge:true}}
-    });*/
-
-
-
     restService.signup.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
-      self.signupEnd = data;
+      //TODO: redirect to place after SIGNUP
+      getUsers();
     });
+  };
 
+  this.login = function(form) {
+    restService.login.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
+      //TODO: redirect to place after SIGNUP
+      alert(data.data);
+    });
+  };
+
+  this.logout = function() {
+    restService.logout.load().$promise.then(function(data) {
+      //TODO: redirect to place after SIGNUP
+      alert(data.data);
+    });
   };
 
 }
