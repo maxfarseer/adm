@@ -44470,3 +44470,1324 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2014-10-27 10:05:35 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "docs-assets/ico/favicon.png".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('docs-assets/ico...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "docs-assets/ico/favicon.png".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:05:35 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '54014'
+    'REDIRECT_URL' => '/docs-assets/ico/favicon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/docs-assets/ico/favicon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414400735.88
+    'REQUEST_TIME' => 1414400735
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:05:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:05:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '54014'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414400740.71
+    'REQUEST_TIME' => 1414400740
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:05:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:05:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '54015'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414400740.71
+    'REQUEST_TIME' => 1414400740
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:05:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:05:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '54012'
+    'REDIRECT_URL' => '/api/data/assets/ec7165fd/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/ec7165fd/jquery.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414400740.71
+    'REQUEST_TIME' => 1414400740
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:05:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('images/favicon....', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:05:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '54011'
+    'REDIRECT_URL' => '/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414400740.86
+    'REQUEST_TIME' => 1414400740
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:23 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/api/signup".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/api/signup".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:23 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost:8001'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8001/builds/development/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55668'
+    'REDIRECT_URL' => '/builds/development/api/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/api/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402103.62
+    'REQUEST_TIME' => 1414402103
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:29 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/api/signup".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/api/signup".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:29 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55672'
+    'REDIRECT_URL' => '/builds/development/api/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/api/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402109.86
+    'REQUEST_TIME' => 1414402109
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:30 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/api/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/api/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:30 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55672'
+    'REDIRECT_URL' => '/builds/development/api/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/api/images/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402110.09
+    'REQUEST_TIME' => 1414402110
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:36 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/api/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/api/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:36 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55673'
+    'REDIRECT_URL' => '/builds/development/api/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/api/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402116.83
+    'REQUEST_TIME' => 1414402116
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:42 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:42 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55674'
+    'REDIRECT_URL' => '/builds/development/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402122.24
+    'REQUEST_TIME' => 1414402122
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:42 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:42 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55675'
+    'REDIRECT_URL' => '/builds/development/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/images/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402122.36
+    'REQUEST_TIME' => 1414402122
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:45 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55675'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402125.91
+    'REQUEST_TIME' => 1414402125
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:45 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55674'
+    'REDIRECT_URL' => '/api/data/assets/ec7165fd/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/ec7165fd/jquery.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402125.91
+    'REQUEST_TIME' => 1414402125
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:45 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:45 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55690'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402125.91
+    'REQUEST_TIME' => 1414402125
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:51 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/default/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/default/ind...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/default/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:51 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55709'
+    'REDIRECT_URL' => '/api'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402131.7
+    'REQUEST_TIME' => 1414402131
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:56 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/signup/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/signup/inde...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/signup/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:56 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55709'
+    'REDIRECT_URL' => '/api/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402136.18
+    'REQUEST_TIME' => 1414402136
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:28:56 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/images/favi...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:28:56 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55714'
+    'REDIRECT_URL' => '/api/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/images/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402136.29
+    'REQUEST_TIME' => 1414402136
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:29:15 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/signup/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/signup/inde...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/signup/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:29:15 [::1][-][-][info][application] $_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost:8001'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8001/builds/development/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55742'
+    'REDIRECT_URL' => '/api/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/signup'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402155.69
+    'REQUEST_TIME' => 1414402155
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:29:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/index".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:29:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55754'
+    'REDIRECT_URL' => '/builds/development'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402180.55
+    'REQUEST_TIME' => 1414402180
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:29:40 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/images/f...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/images/favicon.ico".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:29:40 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55754'
+    'REDIRECT_URL' => '/builds/images/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/images/favicon.ico'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402180.69
+    'REQUEST_TIME' => 1414402180
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:29:46 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:29:46 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55755'
+    'REDIRECT_URL' => '/builds/development/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402186.13
+    'REQUEST_TIME' => 1414402186
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:29:51 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "builds/development/index.html".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('builds/developm...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "builds/development/index.html".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:29:51 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55756'
+    'REDIRECT_URL' => '/builds/development/index.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/builds/development/index.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402191.68
+    'REQUEST_TIME' => 1414402191
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:30:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/js/eauth.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:30:02 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55767'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/js/eauth.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402202.14
+    'REQUEST_TIME' => 1414402202
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:30:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/d5f8302c/css/eauth.css".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:30:02 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55766'
+    'REDIRECT_URL' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/d5f8302c/css/eauth.css'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402202.14
+    'REQUEST_TIME' => 1414402202
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 10:30:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('api/data/assets...', Array)
+#1 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "api/data/assets/ec7165fd/jquery.js".' in /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /Users/user/developments/local/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/user/developments/local/adm/api/index.php(23): yii\base\Application->run()
+#2 {main}
+2014-10-27 10:30:02 [::1][-][-][info][application] $_COOKIE = [
+    'sidebarShown' => 'false'
+    '_redmine_session' => 'BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA==--192812ba94a6441f7ba0ad85611f3ca397da0d4e'
+    'PHPSESSID' => '000f0c07f7bb769a6ce2ec2565ccaeba'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'sidebarShown=false; _redmine_session=BAh7DkkiDHVzZXJfaWQGOgZFRmkDsokBSSIKY3RpbWUGOwBGbCsHaqrpU0kiCmF0aW1lBjsARmwrB4QMSlRJIg9zZXNzaW9uX2lkBjsAVEkiJWI2NmI0ZjQxMDQ1MTJkMjEwMzA0NWI1ZmUxMWM2NDgwBjsAVEkiGWRhc2hib2FyZF9pbmRleF9zb3J0BjsARkkiJnRyYWNrZXIscHJpb3JpdHk6ZGVzYyxzdGF0dXM6ZGVzYwY7AFRJIhBfY3NyZl90b2tlbgY7AEZJIjFLVDV0UklpcmV0d09HMGY3VlB2U0d0M2Z5WXk2TWxQOEJTQzgyKzVRTFM4PQY7AEZJIhZpc3N1ZXNfaW5kZXhfc29ydAY7AEZJIi90cmFja2VyOmRlc2MscHJpb3JpdHk6ZGVzYyxzdGFydF9kYXRlOmRlc2MGOwBUSSIKcXVlcnkGOwBGewk6D3Byb2plY3RfaWRpAaw6DGZpbHRlcnN7B0kiDnN0YXR1c19pZAY7AFR7BzoNb3BlcmF0b3JJIgZvBjsAVDoLdmFsdWVzWwZJIgAGOwBUSSIPdHJhY2tlcl9pZAY7AFR7BzsISSIGPQY7AFQ7CVsGSSIGMgY7AFQ6DWdyb3VwX2J5MDoRY29sdW1uX25hbWVzMEkiF3RpbWVsb2dfaW5kZXhfc29ydAY7AEZJIhJzcGVudF9vbjpkZXNjBjsAVA%3D%3D--192812ba94a6441f7ba0ad85611f3ca397da0d4e; PHPSESSID=000f0c07f7bb769a6ce2ec2565ccaeba'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm/api'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '55761'
+    'REDIRECT_URL' => '/api/data/assets/ec7165fd/jquery.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/data/assets/ec7165fd/jquery.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1414402202.14
+    'REQUEST_TIME' => 1414402202
+    'argv' => []
+    'argc' => 0
+]
+2014-10-27 11:24:59 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\modules\user\controllers\ActiveController' not found' in /Users/user/developments/local/adm/api/modules/user/controllers/DefaultController.php:13
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2014-10-27 11:24:59 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '354a150985d623942d454a13cb534f62'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8888'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8888/builds/development/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=354a150985d623942d454a13cb534f62'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8888'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/user/developments/local/adm'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/user/developments/local/adm/api/index.php'
+    'REMOTE_PORT' => '59199'
+    'REDIRECT_URL' => '/api/getusers'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/getusers'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1414405499.08
+    'REQUEST_TIME' => 1414405499
+    'argv' => []
+    'argc' => 0
+]
