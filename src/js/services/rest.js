@@ -42,15 +42,18 @@ function restService($resource) {
     return(source);
   }
 
-  var rootLink = 'http://localhost:8888/';
+  //var rootLink = 'http://localhost:8888/';
+  var rootLink = window.location.origin;
+
+
   var rest = {
       git: $resource('https://api.github.com/users', {}, {
         load: {method: 'GET', isArray: true}
       }),
-      getUsers: $resource(rootLink + 'api/getusers', {}, {
+      getUsers: $resource(rootLink + '/api/getusers', {}, {
         load: {method: 'GET'}
       }),
-      signup: $resource(rootLink + 'api/test', {}, {
+      signup: $resource(rootLink + '/api/test', {}, {
         //load: {method: 'POST', params:{email:'hello@mail.ru', pass: 'test'}}
         load: {method: 'POST', transformRequest: transformRequest}
       }),
