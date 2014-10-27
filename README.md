@@ -50,9 +50,9 @@ SIGNUP
         status: 0 - error
                 200 - OK
 
-GETUSER
+GETUSERS
     request
-        GET api/getuser
+        GET api/getusers
 
     answer
         JSON {"status": "...", "data": ...}

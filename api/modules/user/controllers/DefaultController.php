@@ -29,7 +29,7 @@ class DefaultController extends ActiveController
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout','test'],
+                'only' => ['logout'],
                 'rules' => [
                     [
                         'actions' => ['logout'],
@@ -189,6 +189,26 @@ class DefaultController extends ActiveController
             $auth->assign($adminRole, $model->getId());
 
             $answer['data'] = 'OK';
+            $answer['status'] = self::STATUS_OK;
+
+        } catch (Exception $e) {
+            $answer['data'] = $e->getMessage();
+            $answer['status'] = $e->getCode();
+        }
+
+        return $answer;
+    }
+
+    public function actionTest()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        try{
+            $model = User::find();
+
+            $answer['data']['BD'] = $model?'YES':'NO';
+            $answer['data']['GET'] = Yii::$app->request->get();
+            $answer['data']['POST'] = Yii::$app->request->post();
             $answer['status'] = self::STATUS_OK;
 
         } catch (Exception $e) {
