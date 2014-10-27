@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function homeCtrl($scope, restService) {
+function homeCtrl($scope, $resource, restService) {
   var self = this;
 
   this.test = 'Angular.js works';
@@ -20,11 +20,24 @@ function homeCtrl($scope, restService) {
   };
 
   this.signup = function(form) {
+    // console.log($resource);
     console.log(form);
-    restService.signup.load().$promise.then(function(data) {
+
+    /*var CreditCard = $resource('http://localhost:8888/api/signup/',
+      {userId:123, cardId:'@id'}, {
+      charge: {method:'POST', params:{charge:true}}
+    });*/
+
+
+
+    restService.getusers.load().$promise.then(function(data) {
       self.signupEnd(data);
     });
-  }
+
+    /*restService.signup({amount:9.99}).load().$promise.then(function(data) {
+      self.signupEnd(data);
+    });*/
+  };
 
 }
 
