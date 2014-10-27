@@ -4,6 +4,5 @@
 /node_modules
 /builds
 /bower_components
-/api/data/
+/api/data
 npm-debug.log
-/api/data/database

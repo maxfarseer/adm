@@ -10,8 +10,8 @@
 
 .row
   .col-md-12
-    h4 weather data
-    | {{home.weatherData}}
+    h4 Пользователи
+    div(ng-repeat="user in home.users") {{user.id}} | {{user.email}}
 
 h4 signup
 .row
