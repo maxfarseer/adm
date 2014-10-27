@@ -7,7 +7,9 @@ function signupCtrl($scope, $state, restService) {
 
   this.signup = function(form) {
     restService.signup.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
-      $state.go('home');
+      if (data.status === 200) {
+        $state.go('home');
+      }
     });
   };
 }
