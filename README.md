@@ -13,6 +13,12 @@ Start:
 
 Copyright: me & SpikerIII
 
+LINKS
+===============
+http://localhost:8888/builds/development/#/signup
+http://localhost:8888/builds/development/#/login
+
+
 API
 
 LOGIN
