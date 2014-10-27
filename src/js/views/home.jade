@@ -13,7 +13,7 @@
     h4 Пользователи
     div(ng-repeat="user in home.users") {{user.id}} | {{user.email}}
 
-h4 signup
+h4 signup [POST]
 .row
   .col-md-12
     form(role='form')
@@ -26,4 +26,5 @@ h4 signup
 
       button.btn.btn-default(ng-click="home.signup(form)") Submit
     //- button.btn.btn-default(type='submit') Submit
-
+.row
+  .col-md-12 {{home.signupEnd}}
