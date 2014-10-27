@@ -7,13 +7,10 @@ function homeCtrl($scope, $resource, restService) {
 
   this.test = 'Angular.js works';
 
-  this.restTest = restService.test.load().$promise.then(function(data) {
-    self.restEnd(data);
+  restService.getUsers.load().$promise.then(function(data) {
+    console.log(data);
+    self.users = data.data;
   });
-
-  this.restEnd = function(data) {
-    this.weatherData = data;
-  };
 
   this.signupEnd = function(data) {
     this.signupEnd = data;
