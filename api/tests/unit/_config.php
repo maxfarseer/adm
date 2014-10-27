@@ -7,6 +7,10 @@ return yii\helpers\ArrayHelper::merge(
         'components' => [
             'db' => [
                 'dsn' => 'mysql:host=localhost;dbname=_adm',
+                'username' => 'root',
+                'password' => '123',
+                'tablePrefix'=>'adm_',
+                'charset' => 'utf8',
             ],
         ],
     ]

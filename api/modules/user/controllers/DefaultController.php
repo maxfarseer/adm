@@ -9,24 +9,25 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use Yii;
 use yii\web\Response;
-class DefaultController extends Controller
+class DefaultController extends ActiveController
 {
     const STATUS_OK = 200;
     const STATUS_BAD = 0;
 
     public $enableCsrfValidation = false;
 
-//    public function beforeAction($action){
-//        parent::beforeAction($action);
-//        Yii::$app->response->format = Response::FORMAT_JSON;
-//    }
+    public  $modelClass  =  'app\modules\user\models\User' ;
+    public  $serializer  =  [
+        'class'  =>  'yii\rest\Serializer' ,
+        'collectionEnvelope'  =>  'items' ,
+    ];
 
     public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout','test'],
                 'rules' => [
                     [
                         'actions' => ['logout'],
@@ -40,11 +41,11 @@ class DefaultController extends Controller
                     ],
                 ],
             ],
-            'eauth' => array(
+            'eauth' => [
                 // required to disable csrf validation on OpenID requests
                 'class' => \nodge\eauth\openid\ControllerBehavior::className(),
-                'only' => array('login'),
-            ),
+                'only' => ['login'],
+            ],
 //            'verbs' => [
 //                'class' => VerbFilter::className(),
 //                'actions' => [
@@ -97,19 +98,18 @@ class DefaultController extends Controller
 
             $model = new LoginForm();
 
-            if (Yii::$app->request->post()) {
+            if (!Yii::$app->request->post())
+                throw new Exception('Неверный метод!', self::STATUS_BAD);
 
-                $attr = Yii::$app->request->post();
-                $model->username = $attr['email'];
-                $model->password = $attr['pass'];
+            $attr = Yii::$app->request->post();
+            $model->username = $attr['email'];
+            $model->password = $attr['pass'];
 
-                if($model->login()){
-                    $answer['data'] = 'Авторизован успешно';
-                    $answer['status'] = self::STATUS_OK;
-                } else
+                if(!$model->login())
                     throw new Exception('Авторизационные данные не верны!', self::STATUS_BAD);
-            } else
-                throw new Exception('Авторизация не прошла!', self::STATUS_BAD);
+
+                $answer['data'] = 'Авторизован успешно';
+                $answer['status'] = self::STATUS_OK;
 
         } catch (Exception $e) {
             $answer['data'] = $e->getMessage();
@@ -122,13 +122,32 @@ class DefaultController extends Controller
     public function actionLogout()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
+
         try{
-            if(Yii::$app->user->logout())
-            {
-                $answer['data'] = 'Logout true';
-                $answer['status'] = self::STATUS_OK;
-            } else
+            if(!Yii::$app->user->logout())
                 throw new Exception('Logout false', self::STATUS_BAD);
+
+            $answer['data'] = 'Logout true';
+            $answer['status'] = self::STATUS_OK;
+
+        } catch (Exception $e) {
+            $answer['data'] = $e->getMessage();
+            $answer['status'] = $e->getCode();
+        }
+
+        return $answer;
+    }
+
+    public function actionAllusers()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        try{
+            $model = User::find()->asArray()->all();
+
+            $answer['data'] = $model;
+            $answer['status'] = self::STATUS_OK;
+
         } catch (Exception $e) {
             $answer['data'] = $e->getMessage();
             $answer['status'] = $e->getCode();
@@ -140,36 +159,34 @@ class DefaultController extends Controller
     public function actionSignup()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
+
         try {
-            if (Yii::$app->request->post()) {
-
-                $model = new User;
-
-                $attr = Yii::$app->request->post();
-                $model->email = $attr['email'];
-                $model->pass = $attr['pass'];
-
-                $model->setScenario('signup');
-
-                if ($model->validate()) {
-
-                    $model->pass = $model->generatePassword($model->pass);
-                    $model->role = 'user';
-                    $model->save(false);
-
-                    $auth = Yii::$app->authManager;
-                    $adminRole = $auth->getRole('user');
-                    $auth->assign($adminRole, $model->getId());
-
-                    $answer['data'] = 'OK';
-                    $answer['status'] = self::STATUS_OK;
-                } else {
-
-                    $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
-                    throw new Exception($errors, self::STATUS_BAD);
-                }
-            } else
+            if (!Yii::$app->request->post())
                 throw new Exception('Undefined query params', self::STATUS_BAD);
+
+            $model = new User;
+
+            $attr = Yii::$app->request->post();
+            $model->email = $attr['email'];
+            $model->pass = $attr['pass'];
+
+            $model->setScenario('signup');
+
+            if (!$model->validate()) {
+                $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
+                throw new Exception($errors, self::STATUS_BAD);
+            }
+
+            $model->pass = $model->generatePassword($model->pass);
+            $model->role = 'user';
+            $model->save(false);
+
+            $auth = Yii::$app->authManager;
+            $adminRole = $auth->getRole('user');
+            $auth->assign($adminRole, $model->getId());
+
+            $answer['data'] = 'OK';
+            $answer['status'] = self::STATUS_OK;
 
         } catch (Exception $e) {
             $answer['data'] = $e->getMessage();

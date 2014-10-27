@@ -14,4 +14,4 @@ modules:
             dsn: 'mysql:host=localhost;dbname=_adm'
             user: 'root'
             password: '123'
-            dump: tests/_data/dump.sql
+#            dump: tests/_data/dump.sql

@@ -10,7 +10,6 @@ $config = [
     'runtimePath' =>RNTM_PATH,
     'bootstrap' => ['log'],
     'components' => [
-
         'eauth' => array(
             'class' => 'nodge\eauth\EAuth',
             'popup' => true, // Use the popup window instead of redirecting.
@@ -147,6 +146,7 @@ $config = [
                 'signup' => 'user/default/signup',
                 'login' => 'user/default/login',
                 'logout' => 'user/default/logout',
+                'getusers' => 'user/default/allusers',
                 'site/login' => 'user/default/login',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',

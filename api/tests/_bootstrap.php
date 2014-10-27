@@ -1,28 +1,5 @@
 <?php
 
-//defined('DATA_PATH') or define('DATA_PATH',__DIR__.'/../data');
-//defined('BASE_PATH') or define('BASE_PATH',dirname(__FILE__));
-////
-//defined('RNTM_PATH') or define('RNTM_PATH',DATA_PATH.'/runtime');
-//defined('DB_PATH') or define('DB_PATH',DATA_PATH.'/database');
-////
-//defined('ASSETS_PATH') or define('ASSETS_PATH',DATA_PATH.'/assets');
-//defined('ASSETS_URL') or define('ASSETS_URL','/data/assets');
-//
-//
-//defined('YII_TEST_ENTRY_URL') or define('YII_TEST_ENTRY_URL', \Codeception\Configuration::config()['config']['test_entry_url']);
-//defined('YII_TEST_ENTRY_FILE') or define('YII_TEST_ENTRY_FILE', dirname(dirname(__DIR__)) . '/web/index-test.php');
-//require_once(__DIR__ . '/../vendor/autoload.php');
-//require_once(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
-//
-//
-//$_SERVER['SCRIPT_FILENAME'] = YII_TEST_ENTRY_FILE;
-//$_SERVER['SCRIPT_NAME'] = YII_TEST_ENTRY_URL;
-//$_SERVER['SERVER_NAME'] = 'localhost';
-//Yii::setAlias('@tests', __DIR__);
-
-
-
 defined('DATA_PATH') or define('DATA_PATH',__DIR__.'/../data');
 defined('BASE_PATH') or define('BASE_PATH',dirname(__DIR__));
 

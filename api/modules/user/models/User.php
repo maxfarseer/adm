@@ -41,7 +41,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return [
             [['pass','email'], 'filter', 'filter' => 'trim'],
             [['status'], 'integer'],
-            [['pass'], 'required'],
+            [['pass','email','status','role'], 'required'],
 //            [['pass2'], 'required', 'on'=>'signup'],
 //            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
             ['email', 'unique', 'message' => 'e-mail уже зарегистрирован'],
