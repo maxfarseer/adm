@@ -6,8 +6,7 @@ function restService($resource) {
 
   function transformRequest( data, getHeaders ) {
     var headers = getHeaders();
-    console.log(headers);
-    headers[ "Content-type" ] = "application/x-www-form-urlencoded;charset=utf-8";
+    headers[ "Content-Type" ] = "application/x-www-form-urlencoded;charset=utf-8";
     return( serializeData( data ) );
   }
 // Return the factory value.
@@ -54,8 +53,8 @@ function restService($resource) {
         load: {method: 'GET'}
       }),
       signup: $resource(rootLink + '/api/test', {}, {
-        //load: {method: 'POST', params:{email:'hello@mail.ru', pass: 'test'}}
         load: {method: 'POST', transformRequest: transformRequest}
+        //load: {method: 'POST', transformRequest: transformRequest}
       }),
     };
 
