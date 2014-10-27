@@ -12,8 +12,8 @@ function restService($resource) {
         load: {method: 'GET'}
       }),
       signup: $resource(rootLink + 'api/signup/', {}, {
-        //load: {method: 'POST', params:{mail:'hello@mail.ru', pass: 'test'}}
-        load: {method: 'POST', params:{test:'test'}}
+        //load: {method: 'POST', params:{email:'hello@mail.ru', pass: 'test'}}
+        load: {method: 'POST'}
       }),
     };
 

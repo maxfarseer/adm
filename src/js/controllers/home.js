@@ -12,10 +12,6 @@ function homeCtrl($scope, $resource, restService) {
     self.users = data.data;
   });
 
-  this.signupEnd = function(data) {
-    this.signupEnd = data;
-  };
-
   this.signup = function(form) {
     // console.log($resource);
     console.log(form);
@@ -27,8 +23,8 @@ function homeCtrl($scope, $resource, restService) {
 
 
 
-    restService.getusers.load().$promise.then(function(data) {
-      self.signupEnd(data);
+    restService.signup.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
+      //self.signupEnd(data);
     });
 
     /*restService.signup({amount:9.99}).load().$promise.then(function(data) {
