@@ -15,6 +15,18 @@ function config($stateProvider, $urlRouterProvider) {
     controller: 'homeCtrl',
     controllerAs: 'home'
   })
+  .state('login', {
+    url: '/login',
+    templateUrl: outputDir + '/js/views/login.html',
+    controller: 'loginCtrl',
+    controllerAs: 'login'
+  })
+  .state('signup', {
+    url: '/signup',
+    templateUrl: outputDir + '/js/views/signup.html',
+    controller: 'signupCtrl',
+    controllerAs: 'signup'
+  })
   .state('data', {
     url: '/data',
     templateUrl: outputDir + '/js/views/data.html',
