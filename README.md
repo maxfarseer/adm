@@ -88,3 +88,20 @@ USERINFO
         status: 403 - no access
                 0 - error
                 200 - OK
+
+USERUPT
+    request
+        POST api/userupt
+
+    parameters
+        email
+        f_name
+        s_name
+        address
+
+    answer
+        JSON {"data":...,"status":...}
+
+        status: 403 - no access
+                0 - error
+                200 - OK

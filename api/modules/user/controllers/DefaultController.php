@@ -9,13 +9,11 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use Yii;
 use yii\web\Response;
+use app\helpers\ExeptionJSON;
 
 use yii\rest\ActiveController;
 class DefaultController extends ActiveController
 {
-    const STATUS_OK = 200;
-    const NO_ACCESS = 403;
-    const STATUS_BAD = 0;
 
     public $enableCsrfValidation = false;
 
@@ -96,29 +94,23 @@ class DefaultController extends ActiveController
         }
         ///////////
 
-       try{
-            if (!Yii::$app->user->isGuest)
-                throw new Exception('Уже авторизован!', self::STATUS_BAD);
+        if (!Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Уже авторизован!', ExeptionJSON::STATUS_BAD);
 
-            $model = new LoginForm();
+        $model = new LoginForm();
 
-            if (!Yii::$app->request->isPost)
-                throw new Exception('Неверный метод!', self::STATUS_BAD);
+        if (!Yii::$app->request->isPost)
+            throw new ExeptionJSON('Неверный метод!', ExeptionJSON::STATUS_BAD);
 
-            $attr = Yii::$app->request->post();
-            $model->username = $attr['email'];
-            $model->password = $attr['pass'];
+        $attr = Yii::$app->request->post();
+        $model->username = $attr['email'];
+        $model->password = $attr['pass'];
 
-                if(!$model->login())
-                    throw new Exception('Авторизационные данные не верны или бан!', self::STATUS_BAD);
+            if(!$model->login())
+                throw new ExeptionJSON('Авторизационные данные не верны или бан!', ExeptionJSON::STATUS_BAD);
 
-                $answer['data'] = 'Авторизован успешно';
-                $answer['status'] = self::STATUS_OK;
-
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
-        }
+            $answer['data'] = 'Авторизован успешно';
+            $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }
@@ -127,17 +119,14 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        try{
-            if(!Yii::$app->user->logout())
-                throw new Exception('Logout false', self::STATUS_BAD);
+        if(!Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Not login', ExeptionJSON::STATUS_BAD);
 
-            $answer['data'] = 'Logout true';
-            $answer['status'] = self::STATUS_OK;
+        if(!Yii::$app->user->logout())
+            throw new ExeptionJSON('Logout false', ExeptionJSON::STATUS_BAD);
 
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
-        }
+        $answer['data'] = 'Logout true';
+        $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }
@@ -149,19 +138,13 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        try{
-            $model = User::find()
-                ->select(['f_name','s_name'])
-                ->asArray()
-                ->all();
+        $model = User::find()
+            ->select(['f_name','s_name'])
+            ->asArray()
+            ->all();
 
-            $answer['data'] = $model;
-            $answer['status'] = self::STATUS_OK;
-
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
-        }
+        $answer['data'] = $model;
+        $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }
@@ -173,21 +156,41 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        try{
-            if(!Yii::$app->request->isGet)
-                throw new Exception('Only GET!', self::STATUS_BAD);
+        if(!Yii::$app->request->isGet)
+            throw new ExeptionJSON('Only GET!', ExeptionJSON::STATUS_BAD);
 
-            $model = User::getInfo();
-            if(!$model)
-                throw new Exception('Авторизуйтесь!', self::NO_ACCESS);
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-            $answer['data'] = $model;
-            $answer['status'] = self::STATUS_OK;
+        $model = User::getInfo();
+        if(!$model)
+            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
 
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
-        }
+        $answer['data'] = $model;
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
+
+    /*
+     * Update user info
+     */
+    public function actionUserupt()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        if(!Yii::$app->request->isPOST)
+            throw new ExeptionJSON('Only POST!', ExeptionJSON::STATUS_BAD);
+
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        $model = User::uptInfo(Yii::$app->request->post());
+        if(!$model)
+            throw new ExeptionJSON('Ошибка обработки данных', ExeptionJSON::STATUS_ERROR);
+
+        $answer['data'] = 'data update OK';
+        $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }
@@ -199,38 +202,35 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        try {
-            if (!Yii::$app->request->post())
-                throw new Exception('Undefined query params', self::STATUS_BAD);
+        if(!Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Уже авторизован!', ExeptionJSON::NO_ACCESS);
 
-            $model = new User;
+        if (!Yii::$app->request->post())
+            throw new ExeptionJSON('Only POST', ExeptionJSON::STATUS_BAD);
 
-            $attr = Yii::$app->request->post();
-            $model->email = $attr['email'];
-            $model->pass = $attr['pass'];
+        $model = new User;
 
-            $model->setScenario('signup');
+        $attr = Yii::$app->request->post();
+        $model->email = $attr['email'];
+        $model->pass = $attr['pass'];
 
-            if (!$model->validate()) {
-                $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
-                throw new Exception($errors, self::STATUS_BAD);
-            }
+        $model->setScenario('signup');
 
-            $model->pass = $model->generatePassword($model->pass);
-            $model->role = 'user';
-            $model->save(false);
-
-            $auth = Yii::$app->authManager;
-            $adminRole = $auth->getRole('user');
-            $auth->assign($adminRole, $model->getId());
-
-            $answer['data'] = 'OK';
-            $answer['status'] = self::STATUS_OK;
-
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
+        if (!$model->validate()) {
+            $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
+            throw new ExeptionJSON($errors, ExeptionJSON::STATUS_BAD);
         }
+
+        $model->pass = $model->generatePassword($model->pass);
+        $model->role = 'user';
+        $model->save(false);
+
+        $auth = Yii::$app->authManager;
+        $adminRole = $auth->getRole('user');
+        $auth->assign($adminRole, $model->getId());
+
+        $answer['data'] = 'OK';
+        $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }
@@ -242,18 +242,12 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        try{
-            $model = User::find();
+        $model = User::find();
 
-            $answer['data']['BD'] = $model?'YES':'NO';
-            $answer['data']['GET'] = Yii::$app->request->get();
-            $answer['data']['POST'] = Yii::$app->request->post();
-            $answer['status'] = self::STATUS_OK;
-
-        } catch (Exception $e) {
-            $answer['data'] = $e->getMessage();
-            $answer['status'] = $e->getCode();
-        }
+        $answer['data']['BD'] = $model?'YES':'NO';
+        $answer['data']['GET'] = Yii::$app->request->get();
+        $answer['data']['POST'] = Yii::$app->request->post();
+        $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
     }

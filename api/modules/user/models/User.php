@@ -197,14 +197,24 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
      */
     public static function getInfo()
     {
-        if(!Yii::$app->user->isGuest){
-            return User::find()
-                ->select(['email','f_name','s_name','address'])
-                ->where(['id'=>Yii::$app->user->id])
-                ->asArray()
-                ->one();
-        } else
-            return false;
+        $answer =  User::find()
+            ->select(['email','f_name','s_name','address'])
+            ->where(['id'=>Yii::$app->user->id])
+            ->asArray()
+            ->one();
+
+        return $answer;
+    }
+
+    /*
+     * Update usr info
+     */
+    public static function uptInfo($attr)
+    {
+        $attr = array_intersect_key($attr,array_flip(['email','f_name','s_name','address']));
+        $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
+
+        return $answer;
     }
 
     /**

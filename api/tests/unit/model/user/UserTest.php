@@ -18,6 +18,9 @@ class UserTest extends DbTestCase
         ];
     }
 
+    /*
+     * login user
+     */
     public function UserLogin()
     {
         $model = new LoginForm();
@@ -31,7 +34,9 @@ class UserTest extends DbTestCase
 
     }
 
-
+    /*
+     * getuser info
+     */
     public function testInfoUser()
     {
         $this->UserLogin();
@@ -48,6 +53,23 @@ class UserTest extends DbTestCase
 
     }
 
+    /*
+     * update userinfo
+     * @dataprovider providerUserInfo
+     */
+    public function testUpdateUserInfo($attr,$rez)
+    {
+        $this->UserLogin();
+
+        $answer = User::UptUserInfo($attr);
+        $this->assertEqals($answer,$rez);
+
+        \Yii::$app->user->logout();
+
+        $answer = User::UptUserInfo($attr);
+        $this->assertEqals($answer,$rez);
+
+    }
     /**
      * @dataProvider providerGetUser
      */
@@ -58,7 +80,7 @@ class UserTest extends DbTestCase
 
     public function providerGetUser(){
         return [
-            [0, 0, 0],
+            [['email'=>'nikozor@ya.ru','f_name'=>'Никита','s_name'=>'Зорин','address'=>'Киров'], true],
             [0, 1, 1],
             [1, 'yy', 1],
             [1, 'u', '']
