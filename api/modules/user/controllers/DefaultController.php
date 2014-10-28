@@ -119,7 +119,7 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        if(!Yii::$app->user->isGuest)
+        if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Not login', ExeptionJSON::STATUS_BAD);
 
         if(!Yii::$app->user->logout())
