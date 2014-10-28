@@ -174,8 +174,8 @@ class DefaultController extends ActiveController
         Yii::$app->response->format = Response::FORMAT_JSON;
 
         try{
-            if(!Yii::$app->request->isPost)
-                throw new Exception('Only POST!', self::STATUS_BAD);
+            if(!Yii::$app->request->isGet)
+                throw new Exception('Only GET!', self::STATUS_BAD);
 
             $model = User::getInfo();
             if(!$model)
