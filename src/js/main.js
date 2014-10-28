@@ -38,16 +38,27 @@ function config($stateProvider, $urlRouterProvider) {
 /**
  * @ngInject
  */
-function run($rootScope, restService) {
+function run($rootScope, $state, restService) {
   $rootScope.restService = restService;
   $rootScope.root = $rootScope;
+
+  /*$rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
+    e.preventDefault();
+
+    restService.getUserInfo.load().$promise.then(function(data) {
+      if (data.status === 403) {
+        console.log(403);
+        //$state.go('login');
+      } else if (data.status === 200) {
+        console.log(200);
+        //$state.go(toState.name);
+      }
+    });
+
+  });*/
 }
 
 angular.module('app', ['ui.router', 'ngResource'])
   .config(config)
   .run(run)
   ;
-
-//additional directives
-//app.directive('myCustomerTwo',require('./directives/my-customer-two'));
-//app.directive('myJquery',require('./directives/my-jquery'));

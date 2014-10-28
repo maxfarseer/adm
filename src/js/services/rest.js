@@ -44,6 +44,9 @@ function restService($resource) {
       getUsers: $resource(rootLink + '/api/getusers', {}, {
         load: {method: 'GET'}
       }),
+      getUserInfo: $resource(rootLink + '/api/userinfo', {}, {
+        load: {method: 'GET'}
+      }),
       signup: $resource(rootLink + '/api/signup', {}, {
         load: {method: 'POST', transformRequest: transformRequest}
       }),

@@ -1,17 +1,10 @@
 .row
   .col-md-12
-    h4 home
-
-.row
-  .col-md-12
-    p test {{home.test}}
-    p Directives
-    <my-customer></my-customer>
-
-.row
-  .col-md-12
-    h4 Пользователи
-    div(ng-repeat="user in home.users") {{user.id}} | {{user.email}} | {{user.role}}
+    h4 Route:home Информация
+    div(ng-if="home.user")
+      input(ng-model="home.user.f_name")
+      input(ng-model="home.user.s_name")
+      input(ng-model="home.user.email")
 
 .row
   .col-md-12

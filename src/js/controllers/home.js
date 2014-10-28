@@ -5,15 +5,13 @@
 function homeCtrl($scope, restService) {
   var self = this;
 
-  this.test = 'Angular.js works';
-
-  function getUsers() {
-    restService.getUsers.load().$promise.then(function(data) {
-      self.users = data.data;
+  this.getUserInfo = function() {
+    restService.getUserInfo.load().$promise.then(function(data) {
+      self.user = data.data;
     });
-  }
+  };
 
-  getUsers();
+  this.getUserInfo();
 
   this.logout = function() {
     restService.logout.load().$promise.then(function(data) {
@@ -21,6 +19,8 @@ function homeCtrl($scope, restService) {
       alert(data.data);
     });
   };
+
+
 
 }
 
