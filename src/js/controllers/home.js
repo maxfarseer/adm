@@ -11,7 +11,7 @@ function homeCtrl($scope, restService) {
     });
   };
 
-  this.getUserInfo();
+  //this.getUserInfo();
 
   this.logout = function() {
     restService.logout.load().$promise.then(function(data) {

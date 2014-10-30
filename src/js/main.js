@@ -6,9 +6,15 @@ var outputDir = '../../builds/development';
  * @ngInject
  */
 function config($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
+  .state('main', {
+    url: '/',
+    templateUrl: outputDir + '/js/views/main.html',
+    controller: 'mainCtrl',
+    controllerAs: 'main'
+  })
   .state('home', {
     url: '/home',
     templateUrl: outputDir + '/js/views/home.html',
@@ -31,7 +37,12 @@ function config($stateProvider, $urlRouterProvider) {
     url: '/data',
     templateUrl: outputDir + '/js/views/data.html',
     controller: 'dataCtrl',
-    controllerAs: 'data'
+    controllerAs: 'data',
+    resolve: {
+      resolveTest: function(restService) {
+        return restService.git.load().$promise;
+      }
+    }
   });
 }
 
@@ -42,10 +53,10 @@ function run($rootScope, $state, restService) {
   $rootScope.restService = restService;
   $rootScope.root = $rootScope;
 
-  /*$rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
-    e.preventDefault();
+  $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
+    //e.preventDefault();
 
-    restService.getUserInfo.load().$promise.then(function(data) {
+    /*restService.getUserInfo.load().$promise.then(function(data) {
       if (data.status === 403) {
         console.log(403);
         //$state.go('login');
@@ -53,9 +64,9 @@ function run($rootScope, $state, restService) {
         console.log(200);
         //$state.go(toState.name);
       }
-    });
+    });*/
 
-  });*/
+  });
 }
 
 angular.module('app', ['ui.router', 'ngResource'])

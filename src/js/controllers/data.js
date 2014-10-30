@@ -2,16 +2,10 @@
 /**
  * @ngInject
  */
-function dataCtrl($scope, restService) {
+function dataCtrl($scope, resolveTest, restService) {
   var self = this;
 
-  restService.git.load().$promise.then(function(data) {
-    self.restEnd(data);
-  });
-
-  this.restEnd = function(data) {
-    this.githubResponce = data;
-  };
+  this.githubResponce = resolveTest;
 }
 
 angular.module('app')
