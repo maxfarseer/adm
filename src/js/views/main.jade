@@ -1,3 +1,11 @@
-p qwe
-  a(ui-sref='main.home') показать дом
-  div(ui-view)
+.row
+  .col-md-12
+    a(ui-sref='main.reg') Регистрация
+
+.row
+  .col-md-12
+    <div ui-view></div>
+
+
+div(ui-view='filters')
+div(ui-view='huilters')

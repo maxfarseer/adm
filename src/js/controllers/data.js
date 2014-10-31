@@ -6,6 +6,7 @@ function dataCtrl($scope, resolveTest, restService) {
   var self = this;
 
   this.githubResponce = resolveTest;
+
 }
 
 angular.module('app')

@@ -15,6 +15,20 @@ function config($stateProvider, $urlRouterProvider) {
     controller: 'mainCtrl',
     controllerAs: 'main'
   })
+  .state('main.reg', {
+    url: 'main/reg',
+    template: '<div>registration area</div>',
+    views: {
+      'filters': {
+        template: '<h4>Filter inbox</h4>',
+        controller: function($scope) {}
+      },
+      'huilters': {
+        template: '<h4>Huilter inbox</h4>',
+        controller: function($scope) {}
+      }
+    }
+  })
   .state('home', {
     url: '/home',
     templateUrl: outputDir + '/js/views/home.html',
@@ -49,23 +63,19 @@ function config($stateProvider, $urlRouterProvider) {
 /**
  * @ngInject
  */
-function run($rootScope, $state, restService) {
+function run($rootScope, $state, $stateParams, restService, authorization, principal) {
   $rootScope.restService = restService;
   $rootScope.root = $rootScope;
 
-  $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
-    //e.preventDefault();
-
-    /*restService.getUserInfo.load().$promise.then(function(data) {
-      if (data.status === 403) {
-        console.log(403);
-        //$state.go('login');
-      } else if (data.status === 200) {
-        console.log(200);
-        //$state.go(toState.name);
-      }
-    });*/
-
+  $rootScope.$on('$stateChangeStart', function(event, toState, toStateParams) {
+    // track the state the user wants to go to; authorization service needs this
+    $rootScope.toState = toState;
+    $rootScope.toStateParams = toStateParams;
+    // if the principal is resolved, do an authorization check immediately. otherwise,
+    // it'll be done when the state it resolved.
+    if (principal.isIdentityResolved()) {
+      authorization.authorize();
+    }
   });
 }
 
