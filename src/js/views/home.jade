@@ -1,7 +1,7 @@
 .row
   .col-md-12
     h4 Route:home Информация
-    div(ng-if="home.user")
+    div(ng-if="!home.user")
       input(ng-model="home.user.f_name")
       input(ng-model="home.user.s_name")
       input(ng-model="home.user.email")
