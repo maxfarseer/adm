@@ -8,6 +8,7 @@ var outputDir = '../../builds/development';
 function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $httpProvider) {
 
   var access = routingConfig.accessLevels;
+  //$httpProvider.defaults.withCredentials = true;
 
   $urlRouterProvider.otherwise('/404');
 
@@ -35,8 +36,10 @@ function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $ht
     abstract: true,
     template: '<ui-view/>',
     data: {
-      access: access.anon
-    }
+      access: access.anon,
+      spiker: '200'
+    },
+
   })
   .state('anon.login', {
     url: '/login',
@@ -92,15 +95,24 @@ function run($rootScope, $state, $stateParams, restService, Auth) {
       event.preventDefault();
     }
 
-    console.log(Auth.authorize());
+    /*else if (!Auth.authorize(toState.data.access)) {
+      $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
+      event.preventDefault();
 
-    /*$rootScope.toState = toState;
-    $rootScope.toStateParams = toStateParams;*/
+      if(fromState.url === '^') {
+        if(Auth.isLoggedIn()) {
+          $state.go('user.home');
+        } else {
+          $rootScope.error = null;
+          $state.go('anon.login');
+        }
+      }
+    }*/
 
   });
 }
 
-angular.module('app', ['ui.router', 'ngResource'])
+angular.module('app', ['ui.router', 'ngResource', 'ngCookies'])
   .config(config)
   .run(run)
   ;

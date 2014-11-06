@@ -1,11 +1,14 @@
 .row
   .col-md-12
     h4 Route:home Информация
-    div(ng-if="!home.user")
+    div(ng-if="home.user")
       input(ng-model="home.user.f_name")
       input(ng-model="home.user.s_name")
       input(ng-model="home.user.email")
+      input(ng-model="home.user.address")
 
 .row
   .col-md-12
+    button.btn.btn-sm.btn-success(ng-click="home.userUpdate(home.user)") Update
+    | &nbsp;
     button.btn.btn-sm.btn-success(ng-click="home.logout()") Выйти

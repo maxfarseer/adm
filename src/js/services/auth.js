@@ -2,10 +2,17 @@
 /**
  * @ngInject
  */
-function Auth($rootScope, $state) {
+function Auth($cookieStore, restService) {
+
+  var currentUser = $cookieStore.get('_identity');
+  console.log(currentUser);
   return {
-    authorize: function() {
-      return 'authorized';
+    isLoggedIn: function() {
+      if (currentUser) {
+        console.log('isLoggedIn');
+        return true;
+      }
+      //return restService.getUserInfo.load().$promise;
     }
   };
 }

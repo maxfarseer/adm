@@ -2,14 +2,19 @@
 /**
  * @ngInject
  */
-function loginCtrl($scope, $state, restService) {
+function loginCtrl($scope, $state, $cookieStore, restService) {
   var self = this;
+
+  $scope.form = {};
+
+  $scope.form.email = 'maxf@mail.ru';
+  $scope.form.pass = '123';
 
   this.login = function(form) {
     restService.login.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
-      //TODO: redirect to place after SIGNUP
+      console.log(data.status);
       if (data.status === 200) {
-        $state.go('home');
+        $state.go('user.home');
       }
     });
   };

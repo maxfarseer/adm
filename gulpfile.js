@@ -73,7 +73,8 @@ gulp.task('compress:libs', function() {
     'bower_components/lodash/dist/lodash.js',
     'bower_components/angular/angular.js',
     'bower_components/angular-resource/angular-resource.js',
-    'bower_components/ui-router/release/angular-ui-router.js'
+    'bower_components/ui-router/release/angular-ui-router.js',
+    'bower_components/angular-cookies/angular-cookies.js'
     ])
     .pipe(concat('libs.js'))
     .pipe(uglify())
