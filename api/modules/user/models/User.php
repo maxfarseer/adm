@@ -3,7 +3,7 @@
 namespace app\modules\user\models;
 
 use Yii;
-
+use app\helpers\ExeptionJSON;
 
 /**
  * This is the model class for table "adm_users".
@@ -171,6 +171,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return Yii::$app->getSecurity()->generatePasswordHash($password);
     }
 
+    /////????
     public function signup()
     {
         if ($this->validate()) {
@@ -190,31 +191,6 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         }
 
         return null;
-    }
-
-    /*
-     * Info user
-     */
-    public static function getInfo()
-    {
-        $answer =  User::find()
-            ->select(['email','f_name','s_name','address'])
-            ->where(['id'=>Yii::$app->user->id])
-            ->asArray()
-            ->one();
-
-        return $answer;
-    }
-
-    /*
-     * Update usr info
-     */
-    public static function uptInfo($attr)
-    {
-        $attr = array_intersect_key($attr,array_flip(['email','f_name','s_name','address']));
-        $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
-
-        return $answer;
     }
 
     /**
@@ -237,5 +213,92 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         $attributes['profile']['service'] = $service->getServiceName();
         Yii::$app->getSession()->set('user-'.$id, $attributes);
         return new self($attributes);
+    }
+
+    /*
+     * Information user
+     */
+    public static function getInfo()
+    {
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        $answer =  User::find()
+            ->select(['email','f_name','s_name','address'])
+            ->where(['id'=>Yii::$app->user->id])
+            ->asArray()
+            ->one();
+
+        if(!$answer)
+            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
+
+        return $answer;
+    }
+
+    /*
+     * Update usr info
+     */
+    public static function uptInfo($attr)
+    {
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        $attr = array_intersect_key($attr,array_flip(['f_name','s_name','address']));
+
+        $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
+        if(!$answer)
+        throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
+        return $answer;
+    }
+
+    /*
+     * registration user
+     */
+    public static function signUsr($attr)
+    {
+        if(!Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Уже авторизован!', ExeptionJSON::NO_ACCESS);
+
+        $model = new User;
+        $model->email = $attr['email'];
+        $model->pass = $attr['pass'];
+
+        $model->setScenario('signup');
+
+        if (!$model->validate()) {
+            $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
+            throw new ExeptionJSON($errors, ExeptionJSON::STATUS_BAD);
+        }
+
+        $model->pass = $model->generatePassword($model->pass);
+        $model->role = 'user';
+
+        if(!$model->save(false))
+            throw new ExeptionJSON('Ошибка записи данных', ExeptionJSON::STATUS_BAD);
+
+        $auth = Yii::$app->authManager;
+        $adminRole = $auth->getRole('user');
+        $auth->assign($adminRole, $model->getId());
+
+        return true;
+    }
+
+    /*
+     * logout user
+     */
+    public static function logoutUsr()
+    {
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Not login', ExeptionJSON::STATUS_BAD);
+
+        if(!Yii::$app->user->logout())
+            throw new ExeptionJSON('Logout false', ExeptionJSON::STATUS_BAD);
+    }
+
+    //вынести в общее
+    public static function reqRevision($req)
+    {
+         if(Yii::$app->request->method != $req)
+             throw new ExeptionJSON('Only '.$req, ExeptionJSON::STATUS_BAD);
     }
 }

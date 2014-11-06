@@ -115,15 +115,14 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
+    /*
+     * logout user
+     */
     public function actionLogout()
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        if(Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Not login', ExeptionJSON::STATUS_BAD);
-
-        if(!Yii::$app->user->logout())
-            throw new ExeptionJSON('Logout false', ExeptionJSON::STATUS_BAD);
+        User::logoutUsr();
 
         $answer['data'] = 'Logout true';
         $answer['status'] = ExeptionJSON::STATUS_OK;
@@ -156,15 +155,9 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        if(!Yii::$app->request->isGet)
-            throw new ExeptionJSON('Only GET!', ExeptionJSON::STATUS_BAD);
-
-        if(Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+        User::reqRevision('GET');
 
         $model = User::getInfo();
-        if(!$model)
-            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
 
         $answer['data'] = $model;
         $answer['status'] = ExeptionJSON::STATUS_OK;
@@ -179,15 +172,9 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        if(!Yii::$app->request->isPOST)
-            throw new ExeptionJSON('Only POST!', ExeptionJSON::STATUS_BAD);
-
-        if(Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+        User::reqRevision('POST');
 
         $model = User::uptInfo(Yii::$app->request->post());
-        if(!$model)
-            throw new ExeptionJSON('Ошибка обработки данных', ExeptionJSON::STATUS_ERROR);
 
         $answer['data'] = 'data update OK';
         $answer['status'] = ExeptionJSON::STATUS_OK;
@@ -202,32 +189,10 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        if(!Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Уже авторизован!', ExeptionJSON::NO_ACCESS);
-
-        if (!Yii::$app->request->post())
-            throw new ExeptionJSON('Only POST', ExeptionJSON::STATUS_BAD);
-
-        $model = new User;
+        User::reqRevision('POST');
 
         $attr = Yii::$app->request->post();
-        $model->email = $attr['email'];
-        $model->pass = $attr['pass'];
-
-        $model->setScenario('signup');
-
-        if (!$model->validate()) {
-            $errors = json_encode($model->getErrors(), JSON_FORCE_OBJECT);
-            throw new ExeptionJSON($errors, ExeptionJSON::STATUS_BAD);
-        }
-
-        $model->pass = $model->generatePassword($model->pass);
-        $model->role = 'user';
-        $model->save(false);
-
-        $auth = Yii::$app->authManager;
-        $adminRole = $auth->getRole('user');
-        $auth->assign($adminRole, $model->getId());
+        User::signUsr($attr);
 
         $answer['data'] = 'OK';
         $answer['status'] = ExeptionJSON::STATUS_OK;

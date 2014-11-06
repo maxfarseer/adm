@@ -13,6 +13,8 @@ class ExeptionJSON extends ExitException{
     const STATUS_BAD = 0;
 
     public function __construct($message = "", $code = 0) {
+        $this->message = $message;
+        $this->code = $code;
         print $this->GenerateAnswer($message, $code);
     }
 

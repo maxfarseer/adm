@@ -4,8 +4,10 @@ namespace app\tests\unit\model;
 
 use app\modules\user\models\LoginForm;
 use app\modules\user\models\User;
+use yii\base\Exception;
 use yii\codeception\DbTestCase;
 use app\tests\unit\fixtures\UserFixture;
+use app\helpers\ExeptionJSON;
 
 class UserTest extends DbTestCase
 {
@@ -17,6 +19,35 @@ class UserTest extends DbTestCase
             'user' => UserFixture::className(),
         ];
     }
+
+    /////////// my JSONException ///////////
+
+    /*
+     * json exeption
+     */
+    public function assertJSONException(callable $callback, $expectedCode = NULL, $expectedMessage = NULL)
+    {
+
+        try {
+            $callback();
+        } catch (ExeptionJSON $e) {
+
+            $message = $e->getMessage();
+            $code = $e->getCode();
+
+            if (NULL !== $expectedCode) {
+                $this->assertEquals($expectedCode, $code, "Failed asserting code of thrown");
+            }
+            if (NULL !== $expectedMessage) {
+                $this->assertContains($expectedMessage, $message, "Failed asserting the message of thrown");
+            }
+            return;
+        }
+
+        $this->fail("Failed asserting that exception was thrown.");
+    }
+
+    /////////// login user ///////////
 
     /*
      * login user
@@ -34,8 +65,10 @@ class UserTest extends DbTestCase
 
     }
 
+    /////////// get userinfo ///////////
+
     /*
-     * getuser info
+     * get user information
      */
     public function testInfoUser()
     {
@@ -47,45 +80,41 @@ class UserTest extends DbTestCase
         $this->assertEquals($attr,$model);
 
         \Yii::$app->user->logout();
-        $model = User::getInfo();
-
-        $this->assertFalse($model);
-
+            $this->assertJSONException( function() {User::getInfo();},403, 'Авторизуйтесь!' );
     }
 
-    /*
+    /////////// update userinfo ///////////
+
+    /**
      * update userinfo
-     * @dataprovider providerUserInfo
+     * @dataProvider providerUserInfo
      */
     public function testUpdateUserInfo($attr,$rez)
     {
         $this->UserLogin();
 
-        $answer = User::UptUserInfo($attr);
-        $this->assertEqals($answer,$rez);
+       $func = function() use (&$attr) {User::uptInfo($attr); };
+
+        if (!$rez)
+            $this->assertJSONException($func, 0, 'Ошибка обработки данных.' );
+        else {
+            $answer = User::uptInfo($attr);
+            $this->assertEquals($answer,$rez);
+        }
 
         \Yii::$app->user->logout();
-
-        $answer = User::UptUserInfo($attr);
-        $this->assertEqals($answer,$rez);
-
-    }
-    /**
-     * @dataProvider providerGetUser
-     */
-    public function testSave($email, $pass, $status)
-    {
-        $this->assertTrue(true);
+            $this->assertJSONException($func, 403, 'Авторизуйтесь!' );
     }
 
-    public function providerGetUser(){
+    public function providerUserInfo(){
         return [
-            [['email'=>'nikozor@ya.ru','f_name'=>'Никита','s_name'=>'Зорин','address'=>'Киров'], true],
-            [0, 1, 1],
-            [1, 'yy', 1],
-            [1, 'u', '']
+            [['f_name'=>'123','s_name'=>'123','address'=>'123','status'=>'123','role'=>'user'], true],
+            [['f_name'=>'','s_name'=>'Зорин','address'=>'Киров'], false],
+            [['email'=>'nikozor@ya.ru','f_name'=>'','s_name'=>'','address'=>''], false],
         ];
     }
+    //////////////////
+
 
     public function isGuest(){
         return \Yii::$app->user->isGuest;
