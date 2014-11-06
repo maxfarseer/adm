@@ -11,7 +11,13 @@ function homeCtrl($scope, restService) {
     });
   };
 
-  //this.getUserInfo();
+  this.getUserInfo();
+
+  this.userUpdate = function(user) {
+    restService.userUpdate.load(user).$promise.then(function(data) {
+      console.log('userUpdate: ' + data.status);
+    });
+  };
 
   this.logout = function() {
     restService.logout.load().$promise.then(function(data) {

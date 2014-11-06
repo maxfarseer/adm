@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function restService($resource) {
+function restService($resource, $timeout) {
 
   // http://www.bennadel.com/blog/2615-posting-form-data-with-http-in-angularjs.htm
   function transformRequest( data, getHeaders ) {
@@ -46,6 +46,9 @@ function restService($resource) {
       }),
       getUserInfo: $resource(rootLink + '/api/userinfo', {}, {
         load: {method: 'GET'}
+      }),
+      userUpdate: $resource(rootLink + '/api/userupt', {}, {
+        load: {method: 'POST', transformRequest: transformRequest}
       }),
       signup: $resource(rootLink + '/api/signup', {}, {
         load: {method: 'POST', transformRequest: transformRequest}
