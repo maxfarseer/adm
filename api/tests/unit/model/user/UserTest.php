@@ -52,12 +52,12 @@ class UserTest extends DbTestCase
     /*
      * login user
      */
-    public function UserLogin()
+    public function UserLogin($email='nikozor@ya.ru',$pass='123')
     {
         $model = new LoginForm();
 
-        $model-> username = 'nikozor@ya.ru';
-        $model-> password = '123';
+        $model-> username = $email;
+        $model-> password = $pass;
 
         $this->assertTrue($this->isGuest());
         $this->assertTrue($model->login());
@@ -91,12 +91,12 @@ class UserTest extends DbTestCase
      */
     public function testUpdateUserInfo($attr,$rez)
     {
-        $this->UserLogin();
+        $this->UserLogin($attr['email'],$attr['pass']);
 
        $func = function() use (&$attr) {User::uptInfo($attr); };
 
-        if (!$rez)
-            $this->assertJSONException($func, 0, 'Ошибка обработки данных.' );
+        if ($rez!==true)
+            $this->assertJSONException($func, 0, $rez );
         else {
             $answer = User::uptInfo($attr);
             $this->assertEquals($answer,$rez);
@@ -108,9 +108,10 @@ class UserTest extends DbTestCase
 
     public function providerUserInfo(){
         return [
-            [['f_name'=>'123','s_name'=>'123','address'=>'123','status'=>'123','role'=>'user'], true],
-            [['f_name'=>'','s_name'=>'Зорин','address'=>'Киров'], false],
-            [['email'=>'nikozor@ya.ru','f_name'=>'','s_name'=>'','address'=>''], false],
+            [['email'=>'nikozor@ya0.ru','pass'=>'123','f_name'=>'123','s_name'=>'123','address'=>'123','status'=>'0','role'=>'user'], 'пользователь забанен'],
+            [['email'=>'nikozor@ya1.ru','pass'=>'123','f_name'=>'1','s_name'=>'Зорин','address'=>'Киров','status'=>'1','role'=>'user'], true],
+            [['email'=>'nikozor@ya2.ru','pass'=>'123','f_name'=>'','s_name'=>'','status'=>'2','role'=>'user'], 'изменение информации запрещено'],
+            [['email'=>'nikozor@ya3.ru','pass'=>'123','f_name'=>'','s_name'=>'','status'=>'3','role'=>'user'], 'изменение информации запрещено'],
         ];
     }
     //////////////////

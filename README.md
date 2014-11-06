@@ -11,13 +11,18 @@ Install:
 Start:
 - gulp build
 
-Copyright: me & SpikerIII
+Copyright: me & Spiker
 
 LINKS
 ===============
 http://localhost:8888/builds/development/#/signup
 http://localhost:8888/builds/development/#/login
 
+status users
+0 - ban
+1 - registered
+2 - full registered (all info in profile, blocked address) ->can donate present
+3 - approved user  ->can get present
 
 API
 
