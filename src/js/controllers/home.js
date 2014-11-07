@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function homeCtrl($scope, restService) {
+function homeCtrl($scope, $state, $cookieStore, restService) {
   var self = this;
 
   this.getUserInfo = function() {
@@ -21,8 +21,10 @@ function homeCtrl($scope, restService) {
 
   this.logout = function() {
     restService.logout.load().$promise.then(function(data) {
-      //TODO: redirect to place after SIGNUP
-      alert(data.data);
+      if (data.status === 200) {
+        $cookieStore.remove('_ADM15');
+        $state.go('public.main');
+      }
     });
   };
 

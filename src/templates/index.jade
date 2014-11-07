@@ -11,11 +11,12 @@ html(ng-app="app")
         nav.navbar.navbar-inverse(role='navigation')
           .navbar-header
               a.navbar-brand(ui-sref='public.main') ADM'15
-            ul.nav.navbar-nav
-              li
-                a(ui-sref='user.home') User.home
-              li
-                a(ui-sref='user.data') User.data
+            div(ng-controller='topMenuCtrl as topmenu')
+              ul.nav.navbar-nav(ng-if='topmenu.isLoggedIn')
+                li
+                  a(ui-sref='user.home') User.home
+                li
+                  a(ui-sref='user.data') User.data
 
       div(ui-view)
       footer

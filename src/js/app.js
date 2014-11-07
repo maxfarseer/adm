@@ -7,23 +7,17 @@ var outputDir = '../../builds/development';
  */
 function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $httpProvider) {
 
-  var access = routingConfig.accessLevels;
-  //$httpProvider.defaults.withCredentials = true;
-
   $urlRouterProvider.otherwise('/404');
 
   $stateProvider
   //public
   .state('public', {
     abstract: true,
-    template: '<ui-view/>',
-    data: {
-      access: access.public
-    }
+    template: '<ui-view/>'
   })
   .state('public.404', {
     url: '/404',
-    templateUrl: outputDir + '/js/views/404.html',
+    templateUrl: outputDir + '/js/views/404.html'
   })
   .state('public.main', {
     url: '/main',
@@ -34,12 +28,7 @@ function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $ht
   //anon
   .state('anon', {
     abstract: true,
-    template: '<ui-view/>',
-    data: {
-      access: access.anon,
-      spiker: '200'
-    },
-
+    template: '<ui-view/>'
   })
   .state('anon.login', {
     url: '/login',
@@ -56,10 +45,7 @@ function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $ht
   //user
   .state('user', {
     abstract: true,
-    template: '<ui-view/>',
-    data: {
-        access: access.user
-    }
+    template: '<ui-view/>'
   })
   .state('user.home', {
     url: '/home',
@@ -86,29 +72,10 @@ function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $ht
  */
 function run($rootScope, $state, $stateParams, restService, Auth) {
   $rootScope.restService = restService;
-  $rootScope.root = $rootScope;
+  //$rootScope.root = $rootScope;
 
-  $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams, fromState) { //fromParams
-
-    if(!('data' in toState) || !('access' in toState.data)){
-      $rootScope.error = "Access undefined for this state";
-      event.preventDefault();
-    }
-
-    /*else if (!Auth.authorize(toState.data.access)) {
-      $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
-      event.preventDefault();
-
-      if(fromState.url === '^') {
-        if(Auth.isLoggedIn()) {
-          $state.go('user.home');
-        } else {
-          $rootScope.error = null;
-          $state.go('anon.login');
-        }
-      }
-    }*/
-
+  $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams, fromState, fromParams) {
+    $rootScope.useradm15 = Auth.isLoggedIn();
   });
 }
 

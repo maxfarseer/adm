@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function restService($resource, $timeout) {
+function restService($resource) {
 
   // http://www.bennadel.com/blog/2615-posting-form-data-with-http-in-angularjs.htm
   function transformRequest( data, getHeaders ) {

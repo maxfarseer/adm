@@ -2,8 +2,7 @@
 /**
  * @ngInject
  */
-function dataCtrl($scope, resolveTest, restService) {
-  var self = this;
+function dataCtrl($scope, resolveTest) {
 
   this.githubResponce = resolveTest;
 

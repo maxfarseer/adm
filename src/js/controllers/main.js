@@ -2,10 +2,8 @@
 /**
  * @ngInject
  */
-function mainCtrl($scope, restService) {
-  var self = this;
-
-  this.test = 'Main';
+function mainCtrl($scope) {
+  //empty
 }
 
 angular.module('app')

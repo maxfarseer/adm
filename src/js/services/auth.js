@@ -2,17 +2,15 @@
 /**
  * @ngInject
  */
-function Auth($cookieStore, restService) {
+function Auth($cookieStore) {
 
-  var currentUser = $cookieStore.get('_identity');
-  console.log(currentUser);
   return {
     isLoggedIn: function() {
-      if (currentUser) {
-        console.log('isLoggedIn');
-        return true;
+      if ($cookieStore.get('_ADM15')) {
+        return 1;
+      } else {
+        return 0;
       }
-      //return restService.getUserInfo.load().$promise;
     }
   };
 }
