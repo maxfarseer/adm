@@ -10,7 +10,6 @@ function loginCtrl($scope, $state, $cookieStore, restService) {
 
   this.login = function(form) {
     restService.login.load({email:form.email, pass: form.pass}).$promise.then(function(data) {
-      console.log(data.status);
       if (data.status === 200) {
         //TODO: data.role from API
         $cookieStore.put('_ADM15','user');

@@ -28,6 +28,16 @@ function homeCtrl($scope, $state, $cookieStore, restService) {
     });
   };
 
+  this.getRecipient = function() {
+    console.log('qqq');
+    console.log($scope);
+    $scope.recipient = {
+      address: 'Москва, Кировоградская 17к1 кв 145',
+      f_name: 'Максим',
+      s_name: 'Пацианский'
+    }
+  }
+
 
 
 }
