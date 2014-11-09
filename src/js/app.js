@@ -79,7 +79,7 @@ function run($rootScope, $state, $stateParams, restService, Auth) {
   });
 }
 
-angular.module('app', ['ui.router', 'ngResource', 'ngCookies'])
+angular.module('app', ['ui.router', 'ngResource', 'ngCookies', 'cgNotify'])
   .config(config)
   .run(run)
   ;

@@ -74,7 +74,8 @@ gulp.task('compress:libs', function() {
     'bower_components/angular/angular.js',
     'bower_components/angular-resource/angular-resource.js',
     'bower_components/ui-router/release/angular-ui-router.js',
-    'bower_components/angular-cookies/angular-cookies.js'
+    'bower_components/angular-cookies/angular-cookies.js',
+    'bower_components/angular-notify/dist/angular-notify.js',
     ])
     .pipe(concat('libs.js'))
     .pipe(uglify())
@@ -106,8 +107,12 @@ gulp.task('watch', function() {
   //gulp.watch(['src/js/**/*.js','tests/*.js'], ['jasmine']);
 });
 
-gulp.task('copyToBuild:bootstrap', function() {
-  return gulp.src('src/vendor/css/bootstrap.min.css')
+gulp.task('compressCssToBuild', function() {
+  return gulp.src([
+    'bower_components/angular-notify/dist/angular-notify.min.css',
+    'src/vendor/css/bootstrap.min.css'
+    ])
+    .pipe(concat('vendor.min.css'))
     .pipe(gulp.dest(outputDir + '/css'));
 });
 
@@ -125,4 +130,4 @@ gulp.task('deleteOldBuild', function () {
 });
 
 gulp.task('default', ['jade', 'jadeAngularTmpl', 'sass', 'watch',  'connect']);
-gulp.task('build', ['compress','compress:libs', 'copyToBuild:bootstrap', 'jade', 'jadeAngularTmpl', 'sass', 'watch', 'connect']);
+gulp.task('build', ['compress','compress:libs', 'compressCssToBuild', 'jade', 'jadeAngularTmpl', 'sass', 'watch', 'connect']);

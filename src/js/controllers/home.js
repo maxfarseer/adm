@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function homeCtrl($scope, $state, $cookieStore, restService) {
+function homeCtrl($scope, $state, $cookieStore, restService, notify) {
   var self = this;
 
   this.getUserInfo = function() {
@@ -15,7 +15,11 @@ function homeCtrl($scope, $state, $cookieStore, restService) {
 
   this.userUpdate = function(user) {
     restService.userUpdate.load(user).$promise.then(function(data) {
-      console.log('userUpdate: ' + data.status);
+      if (data.status === 200) {
+        notify({message: data.data, classes: 'alert-success'});
+      } else {
+        notify({message: data.data, classes: 'alert-danger'});
+      }
     });
   };
 
@@ -35,8 +39,8 @@ function homeCtrl($scope, $state, $cookieStore, restService) {
       address: 'Москва, Кировоградская 17к1 кв 145',
       f_name: 'Максим',
       s_name: 'Пацианский'
-    }
-  }
+    };
+  };
 
 
 
