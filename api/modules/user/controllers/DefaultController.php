@@ -116,7 +116,7 @@ class DefaultController extends ActiveController
     }
 
     /*
-     * logout user
+     * user logout
      */
     public function actionLogout()
     {
@@ -217,4 +217,19 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
+    /*
+     * get digit user
+     */
+    public function actionUserdigit()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        User::reqRevision('GET');
+        $f_name = User::usrDigit();
+
+        $answer['data'] = 'необходимо поздавить пользователя '.$f_name;
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
 }

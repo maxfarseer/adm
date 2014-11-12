@@ -2,6 +2,7 @@
 
 namespace app\modules\user\models;
 
+use app\modules\present\models\Present;
 use Yii;
 use app\helpers\ExeptionJSON;
 
@@ -10,6 +11,8 @@ use app\helpers\ExeptionJSON;
  *
  * @property integer $id
  * @property string $email
+ * @property string $f_name
+ * @property string $s_name
  * @property string $pass
  * @property string $role
  * @property integer $status
@@ -40,7 +43,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         return [
             [['pass','email'], 'filter', 'filter' => 'trim'],
-            [['status', 'id_fester', 'good'], 'integer'],
+            [['id_pkg', 'id_digit','good'], 'integer'],
+            [['status_pkg', 'status_digit'], 'double'],
             [['pass','email','status','role'], 'required'],
 //            [['pass2'], 'required', 'on'=>'signup'],
 //            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
@@ -77,9 +81,24 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             'f_name' => 'Имя',
             's_name' => 'Фамилия',
             'address' => 'Адрес',
-            'id_fester' => 'кого поздравить',
+            'id_pkg' => 'кого поздравить посылкой',
+            'status_pkg' => 'состояние поздравления посылкой',
+            'id_digit' => 'кого поздравить через сайт',
+            'status_digit' => 'состояние поздравления через сайт',
             'good' => 'молодцом',
         ];
+    }
+
+    public function getPkg()
+    {
+        return $this->hasOne(User::className(), ['id' => 'id_pkg'])
+            ->from(['pkg' => User::tableName()])->select(['pkg.address', 'pkg.s_name']);
+    }
+
+    public function getDigit()
+    {
+        return $this->hasOne(User::className(), ['id' => 'id_digit'])
+            ->from(['digit' => User::tableName()]);
     }
 
     /**
@@ -223,9 +242,22 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
+        $tbl = User::tableName();
         $answer =  User::find()
-            ->select(['email','f_name','s_name','address'])
-            ->where(['id'=>Yii::$app->user->id])
+            ->select([
+                $tbl.'.id',$tbl.'.id_pkg',$tbl.'.id_digit',
+                $tbl.'.email', $tbl.'.f_name', $tbl.'.s_name',
+                $tbl.'.address', $tbl.'.status'
+            ])
+            ->where([$tbl.'.id'=>Yii::$app->user->id])
+
+            ->joinWith(['pkg'=> function ($query) {
+                $query->select(['f_name','address']);
+            }])
+
+            ->joinWith(['digit'=> function ($query) {
+                $query->select(['f_name']);
+            }])
             ->asArray()
             ->one();
 
@@ -242,6 +274,9 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        if(Yii::$app->user->identity->status != 1)
+            throw new ExeptionJSON('Нельзя обновлять информацию в текущем статусе', ExeptionJSON::STATUS_ERROR);
 
         $attr = array_intersect_key($attr,array_flip(['f_name','s_name','address']));
 
@@ -300,5 +335,51 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
          if(Yii::$app->request->method != $req)
              throw new ExeptionJSON('Only '.$req, ExeptionJSON::STATUS_BAD);
+    }
+
+    /**
+     * get digit user
+     */
+    public static function usrDigit()
+    {
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        if(!User::checkAccessPresent('digit'))
+            throw new ExeptionJSON('Не заполнены необходимые поля анкеты', ExeptionJSON::STATUS_ERROR);
+
+        if(Yii::$app->user->identity->id_digit != 0)
+            throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
+
+        $model = User::find()->select(['id','email','f_name'])->where(['AND',['>=','status','1'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+
+        $present = new Present();
+        $present -> from = Yii::$app->user->id;
+        $present -> to = $model['id'];
+        $present -> type = 'digit';
+        $present -> status = 0;
+        $present -> date = date('Y-m-d H:i:s');
+
+        if($present -> save())
+            User::updateAll(['id_digit' => $model['id']],['id' => Yii::$app->user->id]);
+
+        return $model['f_name'];
+    }
+
+    public static function checkAccessPresent($present){
+
+        switch($present){
+            case('digit'):
+                $attr = ['email','f_name'];
+                break;
+            case('pkg'):
+                $attr = ['email','address','f_name'];
+                break;
+        }
+
+        foreach($attr as $v)
+            if(empty(Yii::$app->user->identity->$v)) return false;
+
+        return true;
     }
 }

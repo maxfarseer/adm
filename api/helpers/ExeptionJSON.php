@@ -23,6 +23,6 @@ class ExeptionJSON extends ExitException{
         $answer['data'] = $message;
         $answer['status'] = $code;
 
-        return json_encode($answer);
+        return json_encode($answer,JSON_UNESCAPED_UNICODE);
     }
 }

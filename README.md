@@ -19,10 +19,14 @@ http://localhost:8888/builds/development/#/signup
 http://localhost:8888/builds/development/#/login
 
 status users
-0 - ban
-1 - registered
+0 - registered
+1 - can donate digit present (email)
 2 - full registered (all info in profile, blocked address) ->can donate present
 3 - approved user  ->can get present
+
+type presents
+pkg     -   pakage present
+digit   -   present from site
 
 API
 
@@ -103,6 +107,18 @@ USERUPT
         f_name
         s_name
         address
+
+    answer
+        JSON {"data":...,"status":...}
+
+        status: 403 - no access
+                0 - error
+                200 - OK
+
+USERDIGIT
+
+    request
+        GET api/userdigit
 
     answer
         JSON {"data":...,"status":...}

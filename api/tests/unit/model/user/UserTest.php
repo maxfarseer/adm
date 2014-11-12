@@ -89,9 +89,9 @@ class UserTest extends DbTestCase
      * update userinfo
      * @dataProvider providerUserInfo
      */
-    public function testUpdateUserInfo($attr,$rez)
+    public function testUpdateUserInfo($usr,$rez,$attr)
     {
-        $this->UserLogin($attr['email'],$attr['pass']);
+        $this->UserLogin($usr['email'],$usr['pass']);
 
        $func = function() use (&$attr) {User::uptInfo($attr); };
 
@@ -107,11 +107,25 @@ class UserTest extends DbTestCase
     }
 
     public function providerUserInfo(){
+        $users = [
+            [['email'=>'nikozor@ya0.ru','pass'=>'123'], 'Пользователь забанен'],
+            [['email'=>'nikozor@ya1.ru','pass'=>'123'], true],
+            [['email'=>'nikozor@ya2.ru','pass'=>'123'], 'Изменение информации запрещено'],
+            [['email'=>'nikozor@ya3.ru','pass'=>'123'], 'Изменение информации запрещено'],
+        ];
+
+        $data = [
+            [['f_name'=>'123','s_name'=>'123','address'=>'123','status'=>'0','role'=>'moderator']],
+        ];
+
+        foreach($users as $usr){
+
+            foreach($data as $dat){
+                $answer[]=array_merge($usr,$data);
+            }
+        }
         return [
-            [['email'=>'nikozor@ya0.ru','pass'=>'123','f_name'=>'123','s_name'=>'123','address'=>'123','status'=>'0','role'=>'user'], 'пользователь забанен'],
-            [['email'=>'nikozor@ya1.ru','pass'=>'123','f_name'=>'1','s_name'=>'Зорин','address'=>'Киров','status'=>'1','role'=>'user'], true],
-            [['email'=>'nikozor@ya2.ru','pass'=>'123','f_name'=>'','s_name'=>'','status'=>'2','role'=>'user'], 'изменение информации запрещено'],
-            [['email'=>'nikozor@ya3.ru','pass'=>'123','f_name'=>'','s_name'=>'','status'=>'3','role'=>'user'], 'изменение информации запрещено'],
+            $answer
         ];
     }
     //////////////////
