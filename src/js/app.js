@@ -70,16 +70,17 @@ function config($stateProvider, $urlRouterProvider) { //, $locationProvider, $ht
 /**
  * @ngInject
  */
-function run($rootScope, $state, $stateParams, restService, Auth) {
+function run($rootScope, $state, $stateParams, restService, Auth, notify) {
   $rootScope.restService = restService;
   //$rootScope.root = $rootScope;
 
   $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams, fromState, fromParams) {
+    notify.closeAll();
     $rootScope.useradm15 = Auth.isLoggedIn();
   });
 }
 
-angular.module('app', ['ui.router', 'ngResource', 'ngCookies'])
+angular.module('app', ['ui.router', 'ngResource', 'ngCookies', 'ngAnimate', 'cgNotify'])
   .config(config)
   .run(run)
   ;

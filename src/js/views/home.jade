@@ -6,20 +6,57 @@
 
 div(ng-if="home.user")
   .row
+    //- column 1
     .col-md-6
-      form.form-horizontal
-        .form-group
-          label.control-label.col-sm-2(for='name') Имя
-          .col-sm-6
-            input#name.form-control(type='text', placeholder='Иван', ng-model="home.user.f_name")
-        .form-group
-          label.control-label.col-sm-2(for='surname') Фамилия
-          .col-sm-6
-            input#surname.form-control(type='text', placeholder='Иванов', ng-model="home.user.s_name")
-        .form-group
-          .col-sm-6.col-sm-offset-2
-            textarea#address.form-control(rows='2', placeholder='формат адреса смотри ниже', ng-model="home.user.address")
-            p.help-block 123000, Московская область, Москва, ул. Ленина 110, кв. 5.
+      form.form-horizontal(name="profile", novalidate)
+        .checkbox
+          label
+            input(type="checkbox", ng-model="home.user.pkg")
+            | Я хочу получить реальный подарок
+        div.animate-if(ng-if="home.user.pkg")
+          .form-group(ng-class="{'has-error':profile.pName.$error.required}")
+            label.control-label.col-sm-2(for="name") Имя
+            .col-sm-6
+              input#name.form-control(
+                type="text",
+                name="pName",
+                placeholder="Иван",
+                ng-model="home.user.f_name",
+                required="home.user.pkg")
+          .form-group(ng-class="{'has-error':profile.pSurname.$error.required}")
+            label.control-label.col-sm-2(for="surname") Фамилия
+            .col-sm-6
+              input#surname.form-control(
+                type="text",
+                name="pSurname",
+                placeholder="Иванов",
+                ng-model="home.user.s_name",
+                required="home.user.pkg")
+          .form-group(ng-class="{'has-error':profile.pAddress.$error.required}")
+            .col-sm-6.col-sm-offset-2
+              textarea#address.form-control(
+                rows="2",
+                name="pAddress",
+                placeholder="формат адреса смотри ниже",
+                ng-model="home.user.address",
+                required="home.user.pkg")
+              p.help-block 123000, Московская область, Москва, ул. Ленина 110, кв. 5.
+        .checkbox
+          label
+            input(type="checkbox", ng-model="home.user.digit")
+            | Я хочу получить поздровительное сообщение
+        div.animate-if(ng-if="home.user.digit")
+          .form-group(ng-class="{'has-error':profile.pDigit.$error.required || profile.pDigit.$error.email}")
+            label.control-label.col-sm-2(for="digit") e-mail
+            .col-sm-6
+              input#digit.form-control(
+                type="email",
+                name="pDigit"
+                placeholder="john@gmail.com",
+                ng-model="home.user.email",
+                required="home.user.digit")
+
+    //- column 2
     .col-md-6(ng-if="!recipient")
       button.btn.btn-sm.btn-success(ng-click="home.getRecipient()") Получить
     .col-md-6(ng-if="recipient")
@@ -30,9 +67,10 @@ div(ng-if="home.user")
   .row
     .col-md-6
       .col-sm-offset-2
-        button.btn.btn-sm.btn-success(ng-click="home.userUpdate(home.user)") Update
-        | &nbsp;
-        button.btn.btn-sm.btn-success(ng-click="home.logout()") Выйти
+        button.btn.btn-sm.btn-success(
+          ng-click="home.userUpdate(home.user)",
+          ng-disabled="!(profile.$dirty && profile.$valid)",
+          ng-show="home.user.digit || home.user.pkg") Обновить
 
 .row
   .col-md-12

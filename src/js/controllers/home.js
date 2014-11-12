@@ -2,7 +2,7 @@
 /**
  * @ngInject
  */
-function homeCtrl($scope, $state, $cookieStore, restService) {
+function homeCtrl($scope, $state, $cookieStore, restService, notify) {
   var self = this;
 
   this.getUserInfo = function() {
@@ -14,16 +14,13 @@ function homeCtrl($scope, $state, $cookieStore, restService) {
   this.getUserInfo();
 
   this.userUpdate = function(user) {
+    console.log(user);
     restService.userUpdate.load(user).$promise.then(function(data) {
-      console.log('userUpdate: ' + data.status);
-    });
-  };
-
-  this.logout = function() {
-    restService.logout.load().$promise.then(function(data) {
+      notify.closeAll();
       if (data.status === 200) {
-        $cookieStore.remove('_ADM15');
-        $state.go('public.main');
+        notify({message: data.data, classes: 'alert-success'});
+      } else {
+        notify({message: data.data, classes: 'alert-danger'});
       }
     });
   };
@@ -35,8 +32,8 @@ function homeCtrl($scope, $state, $cookieStore, restService) {
       address: 'Москва, Кировоградская 17к1 кв 145',
       f_name: 'Максим',
       s_name: 'Пацианский'
-    }
-  }
+    };
+  };
 
 
 
