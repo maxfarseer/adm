@@ -19,6 +19,7 @@ html(ng-app="app")
                   a(ui-sref='user.home') User.home
                 li
                   a(ui-sref='user.data') User.data
+              button.btn.btn-sm.btn-success.btn-logout(ng-click='topmenu.logout()',ng-if='topmenu.isLoggedIn') Выйти
 
       div(ui-view)
       footer

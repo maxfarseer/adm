@@ -14,20 +14,13 @@ function homeCtrl($scope, $state, $cookieStore, restService, notify) {
   this.getUserInfo();
 
   this.userUpdate = function(user) {
+    console.log(user);
     restService.userUpdate.load(user).$promise.then(function(data) {
+      notify.closeAll();
       if (data.status === 200) {
         notify({message: data.data, classes: 'alert-success'});
       } else {
         notify({message: data.data, classes: 'alert-danger'});
-      }
-    });
-  };
-
-  this.logout = function() {
-    restService.logout.load().$promise.then(function(data) {
-      if (data.status === 200) {
-        $cookieStore.remove('_ADM15');
-        $state.go('public.main');
       }
     });
   };
