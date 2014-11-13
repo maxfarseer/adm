@@ -176,7 +176,7 @@ class DefaultController extends ActiveController
 
         $model = User::uptInfo(Yii::$app->request->post());
 
-        $answer['data'] = 'data update OK';
+        $answer['data'] = 'Данные изменены';
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
@@ -227,7 +227,7 @@ class DefaultController extends ActiveController
         User::reqRevision('GET');
         $f_name = User::usrDigit();
 
-        $answer['data'] = ['virtual_present' => $f_name];
+        $answer['data'] = ['virtual_client' => $f_name];
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
@@ -241,9 +241,9 @@ class DefaultController extends ActiveController
         Yii::$app->response->format = Response::FORMAT_JSON;
 
         User::reqRevision('GET');
-        $f_name = User::usrPkg();
+        $data = User::usrPkg();
 
-        $answer['data'] = ['real_present' => $f_name];
+        $answer['data'] = ['real_client' => $data];
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;

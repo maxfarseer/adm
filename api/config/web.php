@@ -88,7 +88,8 @@ $config = [
                 'test' => 'user/default/test',
                 'userinfo' => 'user/default/userinfo',
                 'userupt' => 'user/default/userupt',
-                'userdigit' => 'user/default/userdigit',
+                'getvirtual' => 'user/default/userdigit',
+                'getreal' => 'user/default/userpkg',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',
 

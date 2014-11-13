@@ -248,7 +248,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             ->select([
                 $tbl.'.id',$tbl.'.id_pkg',$tbl.'.id_digit',
                 $tbl.'.email', $tbl.'.f_name', $tbl.'.s_name',
-                $tbl.'.address', $tbl.'.status'
+                $tbl.'.address', $tbl.'.nickname',
+                $tbl.'.status_pkg', $tbl.'.status_digit'
             ])
             ->where([$tbl.'.id'=>Yii::$app->user->id])
 
@@ -262,11 +263,25 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             ->asArray()
             ->one();
 
-
         if(!$answer)
             throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
 
-        return $answer;
+        $real_present = ['f_name','s_name', 'address'];
+        $virtual_present = ['nickname', 'email'];
+
+        $real_client = ['f_name','s_name', 'address'];
+        $virtual_client = ['nickname'];
+
+        $rez['real_present'] = array_intersect_key($answer,array_flip($real_present));
+        $rez['real_present']['status'] = User::statusPresent($answer['status_pkg']);
+
+        $rez['virtual_present'] = array_intersect_key($answer,array_flip($virtual_present));
+        $rez['virtual_present']['status'] = User::statusPresent($answer['status_digit']);
+
+        $rez['real_client'] = (is_array($answer['pkg']))? array_intersect_key($answer['pkg'],array_flip($real_client)) : null;
+        $rez['virtual_client'] = (is_array($answer['digit']))? array_intersect_key($answer['digit'],array_flip($virtual_client)) : null;
+
+        return $rez;
     }
 
     /*
@@ -277,9 +292,12 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
+        $attr = json_decode($attr);
+        $attr = array_merge($attr['real_present'], $attr['virtual_present']);
+
         $attrib = User::checkAttrUpdate();
 
-        if(sizeof($attr) == 0)
+        if(sizeof($attrib) == 0)
             throw new ExeptionJSON('Нельзя обновлять информацию в текущем статусе', ExeptionJSON::STATUS_ERROR);
 
         $attr = array_intersect_key($attr,array_flip($attrib));
@@ -287,6 +305,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
         if(!$answer)
         throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
+
+        User::userChangeStatus();
         return $answer;
     }
 
@@ -355,7 +375,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->identity->id_digit != 0)
             throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
 
-        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'2'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'1'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
 
         $present = new Present();
         $present -> from = Yii::$app->user->id;
@@ -367,7 +387,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if($present -> save())
             User::updateAll(['id_digit' => $model['id']],['id' => Yii::$app->user->id]);
 
-        return $model['f_name'];
+        return $model['nickname'];
     }
 
     /**
@@ -396,17 +416,17 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if($present -> save())
             User::updateAll(['id_pkg' => $model['id']],['id' => Yii::$app->user->id]);
 
-        return $model['f_name'];
+        return [$model['f_name'], $model['s_name'], $model['address']];
     }
 
     public static function checkAttrUpdate(){
 
         $attr = [];
-        if(Yii::$app->user->identity->status_pkg == 2)
+        if(Yii::$app->user->identity->status_pkg != 2)
             $attr = array_merge($attr,['s_name','address','f_name']);
 
-        if(Yii::$app->user->identity->status_digit == 2)
-            $attr = array_merge($attr,['email','f_name']);
+        if(Yii::$app->user->identity->status_digit != 2)
+            $attr = array_merge($attr,['email','nickname']);
 
         $attr = array_unique($attr);
 
@@ -428,5 +448,27 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             if(empty(Yii::$app->user->identity->$v)) return false;
 
         return true;
+    }
+
+    public static function statusPresent($status){
+
+        $stat = [
+            '0' => 'free',
+            '1' => 'verifying',
+            '2' => 'blocked',
+        ];
+
+        return $stat[$status];
+    }
+
+    public static function userChangeStatus(){
+
+        if(User::checkAccessPresent('digit')) $attr = ['status_digit' => 1];
+        if(User::checkAccessPresent('pkg')) $attr = ['status_pkg' => 1];
+
+        if(isset($attr))
+            return User::updateAll($attr,['id'=>Yii::$app->user->id]);
+
+        return false;
     }
 }
