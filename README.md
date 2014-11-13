@@ -92,11 +92,20 @@ USERINFO
         GET api/userinfo
 
     answer
-        JSON {"data":{"email":"...","f_name":"...","s_name":"...","address":"..."},"status":...}
-
         status: 403 - no access
                 0 - error
                 200 - OK
+
+        real_present {
+           f_name
+           s_name
+           address
+           status: verifying/blocked
+        }
+        virtual_present {
+           email
+           f_name
+        }
 
 USERUPT
     request
