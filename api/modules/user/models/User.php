@@ -49,9 +49,9 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 //            [['pass2'], 'required', 'on'=>'signup'],
 //            ['pass2', 'compare', 'compareAttribute' => 'pass', 'message' => 'Пароли не совпадают'],
             ['email', 'unique', 'message' => 'e-mail уже зарегистрирован'],
-            [['email'], 'string', 'max' => 20],
+            [['email'], 'string', 'max' => 100],
             [['pass'], 'string', 'max' => 70],
-            [['f_name','s_name'], 'string', 'max' => 50],
+            [['f_name','s_name','nickname'], 'string', 'max' => 50],
             [['address'], 'string', 'max' => 300],
             [['role','ref'], 'string', 'max' => 10]
         ];
@@ -80,6 +80,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             'date_login' => 'Логин',
             'f_name' => 'Имя',
             's_name' => 'Фамилия',
+            'nickname' => 'Никнейм',
             'address' => 'Адрес',
             'id_pkg' => 'кого поздравить посылкой',
             'status_pkg' => 'состояние поздравления посылкой',
@@ -252,14 +253,15 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             ->where([$tbl.'.id'=>Yii::$app->user->id])
 
             ->joinWith(['pkg'=> function ($query) {
-                $query->select(['f_name','address']);
+                $query->select(['s_name','f_name','address']);
             }])
 
             ->joinWith(['digit'=> function ($query) {
-                $query->select(['f_name']);
+                $query->select(['nickname']);
             }])
             ->asArray()
             ->one();
+
 
         if(!$answer)
             throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
@@ -275,10 +277,12 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        if(Yii::$app->user->identity->status != 1)
+        $attrib = User::checkAttrUpdate();
+
+        if(sizeof($attr) == 0)
             throw new ExeptionJSON('Нельзя обновлять информацию в текущем статусе', ExeptionJSON::STATUS_ERROR);
 
-        $attr = array_intersect_key($attr,array_flip(['f_name','s_name','address']));
+        $attr = array_intersect_key($attr,array_flip($attrib));
 
         $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
         if(!$answer)
@@ -351,7 +355,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->identity->id_digit != 0)
             throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
 
-        $model = User::find()->select(['id','email','f_name'])->where(['AND',['>=','status','1'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'2'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
 
         $present = new Present();
         $present -> from = Yii::$app->user->id;
@@ -366,6 +370,49 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return $model['f_name'];
     }
 
+    /**
+     * get pkg user
+     */
+    public static function usrPkg()
+    {
+        if(Yii::$app->user->isGuest)
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        if(!User::checkAccessPresent('pkg'))
+            throw new ExeptionJSON('Не заполнены необходимые поля анкеты', ExeptionJSON::STATUS_ERROR);
+
+        if(Yii::$app->user->identity->id_pkg != 0)
+            throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
+
+        $model = User::find()->select(['id','email','f_name'])->where(['AND',['>=','status_pkg','2'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+
+        $present = new Present();
+        $present -> from = Yii::$app->user->id;
+        $present -> to = $model['id'];
+        $present -> type = 'pkg';
+        $present -> status = 0;
+        $present -> date = date('Y-m-d H:i:s');
+
+        if($present -> save())
+            User::updateAll(['id_pkg' => $model['id']],['id' => Yii::$app->user->id]);
+
+        return $model['f_name'];
+    }
+
+    public static function checkAttrUpdate(){
+
+        $attr = [];
+        if(Yii::$app->user->identity->status_pkg == 2)
+            $attr = array_merge($attr,['s_name','address','f_name']);
+
+        if(Yii::$app->user->identity->status_digit == 2)
+            $attr = array_merge($attr,['email','f_name']);
+
+        $attr = array_unique($attr);
+
+        return $attr;
+    }
+
     public static function checkAccessPresent($present){
 
         switch($present){
@@ -373,7 +420,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
                 $attr = ['email','f_name'];
                 break;
             case('pkg'):
-                $attr = ['email','address','f_name'];
+                $attr = ['s_name','address','f_name'];
                 break;
         }
 

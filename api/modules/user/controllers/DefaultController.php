@@ -227,7 +227,23 @@ class DefaultController extends ActiveController
         User::reqRevision('GET');
         $f_name = User::usrDigit();
 
-        $answer['data'] = 'необходимо поздавить пользователя '.$f_name;
+        $answer['data'] = ['virtual_present' => $f_name];
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
+
+    /*
+     * get pkg user
+     */
+    public function actionUserpkg()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        User::reqRevision('GET');
+        $f_name = User::usrPkg();
+
+        $answer['data'] = ['real_present' => $f_name];
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
