@@ -38,7 +38,7 @@ function homeCtrl($scope, $state, $cookieStore, restService, notify) {
   this.getUserInfo();
 
   this.userUpdate = function(user) {
-    restService.userUpdate.load(JSON.stringify(user)).$promise.then(function(data) {
+    restService.userUpdate.load({user: JSON.stringify(user)}).$promise.then(function(data) {
       notify.closeAll();
       if (data.status === 200) {
         notify({message: data.data, classes: 'alert-success'});

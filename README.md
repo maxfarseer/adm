@@ -104,7 +104,7 @@ USERINFO
         }
         virtual_present {
            email
-           f_name
+           nickname
         }
         real_client {
            f_name
@@ -112,7 +112,7 @@ USERINFO
            address
         }
         virtual_client {
-           f_name
+           nickname
         }
 
 USERUPT
