@@ -132,10 +132,12 @@ USERUPT
                 0 - error
                 200 - OK
 
-USERDIGIT
+
+GETREAL, GETVIRTUAL
 
     request
-        GET api/userdigit
+        GET api/getvirtual
+            api/getreal
 
     answer
         JSON {"data":...,"status":...}
