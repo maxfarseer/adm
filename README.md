@@ -106,6 +106,14 @@ USERINFO
            email
            f_name
         }
+        real_client {
+           f_name
+           s_name
+           address
+        }
+        virtual_client {
+           f_name
+        }
 
 USERUPT
     request
