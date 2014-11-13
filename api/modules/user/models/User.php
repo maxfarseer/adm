@@ -292,7 +292,11 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        $attr = json_decode($attr);
+//        print_r($attr['user']);
+        $attr = json_decode($attr['user'],true);
+        $status_digit = $attr['virtual_present']['status'];
+        $status_pkg = $attr['real_present']['status'];
+
         $attr = array_merge($attr['real_present'], $attr['virtual_present']);
 
         $attrib = User::checkAttrUpdate();
@@ -303,8 +307,12 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         $attr = array_intersect_key($attr,array_flip($attrib));
 
         $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
-        if(!$answer)
-        throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
+
+        if($answer === false)
+            throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
+
+        if($answer == 0)
+            throw new ExeptionJSON('Нет новых данных для обновления', ExeptionJSON::STATUS_ERROR);
 
         User::userChangeStatus();
         return $answer;
@@ -377,6 +385,9 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 
         $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'1'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
 
+        if(sizeof($model) == 0)
+            throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
+
         $present = new Present();
         $present -> from = Yii::$app->user->id;
         $present -> to = $model['id'];
@@ -405,6 +416,9 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
 
         $model = User::find()->select(['id','email','f_name'])->where(['AND',['>=','status_pkg','2'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+
+        if(sizeof($model) == 0)
+            throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
 
         $present = new Present();
         $present -> from = Yii::$app->user->id;
@@ -437,7 +451,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 
         switch($present){
             case('digit'):
-                $attr = ['email','f_name'];
+                $attr = ['email','nickname'];
                 break;
             case('pkg'):
                 $attr = ['s_name','address','f_name'];
@@ -463,10 +477,11 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 
     public static function userChangeStatus(){
 
-        if(User::checkAccessPresent('digit')) $attr = ['status_digit' => 1];
-        if(User::checkAccessPresent('pkg')) $attr = ['status_pkg' => 1];
+        $attr = [];
+        if(User::checkAccessPresent('digit')) $attr = array_merge($attr,['status_digit' => 1]);
+        if(User::checkAccessPresent('pkg')) $attr = array_merge($attr,['status_pkg' => 1]);
 
-        if(isset($attr))
+        if(sizeof($attr)>0)
             return User::updateAll($attr,['id'=>Yii::$app->user->id]);
 
         return false;
