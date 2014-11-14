@@ -383,22 +383,22 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->identity->id_digit != 0)
             throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
 
-        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'1'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'1'],['id_digit' => '0']])->orderBy('RAND()')->one();
 
-        if(sizeof($model) == 0)
+        if(!$model)
             throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
 
         $present = new Present();
         $present -> from = Yii::$app->user->id;
-        $present -> to = $model['id'];
+        $present -> to = $model->id;
         $present -> type = 'digit';
         $present -> status = 0;
         $present -> date = date('Y-m-d H:i:s');
 
         if($present -> save())
-            User::updateAll(['id_digit' => $model['id']],['id' => Yii::$app->user->id]);
+            User::updateAll(['id_digit' => $model->id],['id' => Yii::$app->user->id]);
 
-        return $model['nickname'];
+        return $model->nickname;
     }
 
     /**
@@ -415,22 +415,22 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         if(Yii::$app->user->identity->id_pkg != 0)
             throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
 
-        $model = User::find()->select(['id','email','f_name'])->where(['AND',['>=','status_pkg','2'],['id_digit' => '0']])->orderBy('RAND()')->one()->toArray();
+        $model = User::find()->select(['id','s_name','f_name','address'])->where(['AND',['>=','status_pkg','2'],['id_digit' => '0']])->orderBy('RAND()')->one();
 
-        if(sizeof($model) == 0)
+        if(!$model)
             throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
 
         $present = new Present();
         $present -> from = Yii::$app->user->id;
-        $present -> to = $model['id'];
+        $present -> to = $model->id;
         $present -> type = 'pkg';
         $present -> status = 0;
         $present -> date = date('Y-m-d H:i:s');
 
         if($present -> save())
-            User::updateAll(['id_pkg' => $model['id']],['id' => Yii::$app->user->id]);
+            User::updateAll(['id_pkg' => $model->id],['id' => Yii::$app->user->id]);
 
-        return [$model['f_name'], $model['s_name'], $model['address']];
+        return [$model->f_name, $model->s_name, $model->address];
     }
 
     public static function checkAttrUpdate(){
