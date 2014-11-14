@@ -48,12 +48,16 @@ function homeCtrl($scope, $state, $cookieStore, restService, notify) {
     });
   };
 
-  this.getRecipient = function() {
-    $scope.recipient = {
-      address: 'Москва, Кировоградская 17к1 кв 145',
-      f_name: 'Максим',
-      s_name: 'Пацианский'
-    };
+  this.getRealClient = function() {
+    restService.getRealClient.load().$promise.then(function(data) {
+      console.log(data);
+    });
+  };
+
+  this.getVirtualClient = function() {
+    restService.getVirtualClient.load().$promise.then(function(data) {
+      console.log(data);
+    });
   };
 
 

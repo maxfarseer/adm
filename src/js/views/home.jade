@@ -66,12 +66,10 @@ div(ng-if="home.user")
                 required="home.user.pDigitName")
 
     //- column 2
-    .col-md-6(ng-if="!recipient")
-      button.btn.btn-sm.btn-success(ng-click="home.getRecipient()") Получить
-    .col-md-6(ng-if="recipient")
-      p {{recipient.f_name}}
-      p {{recipient.s_name}}
-      p {{recipient.address}}
+    .col-md-6
+      button.btn.btn-sm.btn-success(ng-click="home.getRealClient()") GetRealClient()
+    .col-md-6
+      button.btn.btn-sm.btn-success(ng-click="home.getVirtualClient()") GetVirtualClient()
 
   .row
     .col-md-6

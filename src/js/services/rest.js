@@ -58,6 +58,12 @@ function restService($resource) {
       }),
       logout: $resource(rootLink + '/api/logout', {}, {
         load: {method: 'GET'}
+      }),
+      getRealClient: $resource(rootLink + '/api/getreal', {}, { // получатель реального подарка
+        load: {method: 'GET'}
+      }),
+      getVirtualClient: $resource(rootLink + '/api/getvirtual', {}, { // получтаель виртуального подарка
+        load: {method: 'GET'}
       })
     };
 
