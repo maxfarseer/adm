@@ -2,10 +2,11 @@
 
 namespace app\modules\main\controllers;
 
-use app\helpers\LoaderFH;
 use Yii;
+use app\helpers\LoaderFH;
 use yii\base\ErrorException;
 use app\modules\user\models\User;
+use yii\base\Exception;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -38,6 +39,35 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    /*
+     * dump
+     */
+    public function actionDump()
+    {
+        try {
+            $f = @fopen(BASE_PATH . '/dump/5-dump.sql', "r");
+            if ($f) {
+                $q = '';
+
+                while (!feof($f)) {
+                    // читаем построчно в буфер $q
+                    $q .= fgets($f);
+
+                    if (substr(rtrim($q), -1) == ';') {
+
+                        Yii::$app->db->createCommand($q)->execute();
+
+                        // обнуляем буфер
+                        $q = '';
+                    }
+                }
+            }
+        } catch (Exception $e){
+            return $e->getMessage();
+        }
+
+        return "Все ОК!";
+    }
     /*
      * Get point from id
      */

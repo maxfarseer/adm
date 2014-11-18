@@ -1,6 +1,8 @@
 <?php
 namespace app\modules\user\controllers;
 
+use app\modules\present\models\Present;
+use app\modules\user\models\DataFormat;
 use app\modules\user\models\LoginForm;
 use yii\base\Exception;
 use app\modules\user\models\User;
@@ -155,7 +157,7 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        User::reqRevision('GET');
+        DataFormat::reqRevision('GET');
 
         $model = User::getInfo();
 
@@ -172,9 +174,9 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        User::reqRevision('POST');
+        DataFormat::reqRevision('POST');
 
-        $model = User::uptInfo(Yii::$app->request->post());
+        $model = User::uptInfo(Yii::$app->request->post('user'));
 
         $answer['data'] = 'Данные изменены';
         $answer['status'] = ExeptionJSON::STATUS_OK;
@@ -189,10 +191,46 @@ class DefaultController extends ActiveController
     {
         Yii::$app->response->format = Response::FORMAT_JSON;
 
-        User::reqRevision('POST');
+        DataFormat::reqRevision('POST');
 
         $attr = Yii::$app->request->post();
         User::signUsr($attr);
+
+        $answer['data'] = 'OK';
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
+
+    /*
+     * baned
+     */
+    public function actionBan()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        DataFormat::reqRevision('POST');
+
+        $attr = Yii::$app->request->post();
+        User::userBan($attr['id']);
+
+        $answer['data'] = 'OK';
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
+
+    /*
+     * baned
+     */
+    public function actionBanout()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        DataFormat::reqRevision('POST');
+
+        $attr = Yii::$app->request->post();
+        User::userBan($attr['id'],1);
 
         $answer['data'] = 'OK';
         $answer['status'] = ExeptionJSON::STATUS_OK;
@@ -217,35 +255,4 @@ class DefaultController extends ActiveController
         return $answer;
     }
 
-    /*
-     * get digit user
-     */
-    public function actionUserdigit()
-    {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-
-        User::reqRevision('GET');
-        $f_name = User::usrDigit();
-
-        $answer['data'] = ['virtual_client' => $f_name];
-        $answer['status'] = ExeptionJSON::STATUS_OK;
-
-        return $answer;
-    }
-
-    /*
-     * get pkg user
-     */
-    public function actionUserpkg()
-    {
-        Yii::$app->response->format = Response::FORMAT_JSON;
-
-        User::reqRevision('GET');
-        $data = User::usrPkg();
-
-        $answer['data'] = ['real_client' => $data];
-        $answer['status'] = ExeptionJSON::STATUS_OK;
-
-        return $answer;
-    }
 }

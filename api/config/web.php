@@ -88,8 +88,12 @@ $config = [
                 'test' => 'user/default/test',
                 'userinfo' => 'user/default/userinfo',
                 'userupt' => 'user/default/userupt',
-                'getvirtual' => 'user/default/userdigit',
-                'getreal' => 'user/default/userpkg',
+                'getvirtual' => 'present/default/userdigit',
+                'getreal' => 'present/default/userpkg',
+                'sendvirtual' => 'present/default/digitmsg',
+                'commentreal' => 'present/default/pkgmsg',
+                'baned' => 'user/default/ban',
+                'banout' => 'user/default/banout',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',
 
@@ -135,6 +139,9 @@ $config = [
     'modules' => [
         'main' => [
             'class' => 'app\modules\main\Module',
+        ],
+        'present' => [
+            'class' => 'app\modules\present\Module',
         ],
         'user' => [
             'class' => 'app\modules\user\Module',

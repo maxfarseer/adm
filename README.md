@@ -145,3 +145,17 @@ GETREAL, GETVIRTUAL
         status: 403 - no access
                 0 - error
                 200 - OK
+
+SENDVIRTUAL, COMMENTREAL
+    data: message
+
+    request
+        POST api/sendvirtual
+             api/commentreal
+
+BAN, BANOUT
+ data: id
+
+ request
+     POST api/ban
+          api/banout

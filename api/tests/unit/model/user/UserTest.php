@@ -52,8 +52,9 @@ class UserTest extends DbTestCase
     /*
      * login user
      */
-    public function UserLogin($email='nikozor@ya.ru',$pass='123')
+    public function UserLogin($email='nikozor@ya.ru0',$pass='123')
     {
+        \Yii::$app->user->logout();
         $model = new LoginForm();
 
         $model-> username = $email;
@@ -62,7 +63,6 @@ class UserTest extends DbTestCase
         $this->assertTrue($this->isGuest());
         $this->assertTrue($model->login());
         $this->assertFalse($this->isGuest());
-
     }
 
     /////////// get userinfo ///////////
@@ -74,10 +74,10 @@ class UserTest extends DbTestCase
     {
         $this->UserLogin();
 
-        $attr = ['email'=>'nikozor@ya.ru','f_name'=>'Никита','s_name'=>'Зорин','address'=>'Киров'];
         $model = User::getInfo();
 
-        $this->assertEquals($attr,$model);
+        $this->assertTrue(($model['real_client'] === null) || sizeof($model['real_client']) > 0);
+        $this->assertTrue(($model['virtual_client'] === null) || sizeof($model['virtual_client']) > 0);
 
         \Yii::$app->user->logout();
             $this->assertJSONException( function() {User::getInfo();},403, 'Авторизуйтесь!' );

@@ -3,6 +3,7 @@
 namespace app\modules\user\models;
 
 use app\modules\present\models\Present;
+use app\modules\user\models\DataFormat;
 use Yii;
 use app\helpers\ExeptionJSON;
 
@@ -236,91 +237,8 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     }
 
     /*
-     * Information user
-     */
-    public static function getInfo()
-    {
-        if(Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
-
-        $tbl = User::tableName();
-        $answer =  User::find()
-            ->select([
-                $tbl.'.id',$tbl.'.id_pkg',$tbl.'.id_digit',
-                $tbl.'.email', $tbl.'.f_name', $tbl.'.s_name',
-                $tbl.'.address', $tbl.'.nickname',
-                $tbl.'.status_pkg', $tbl.'.status_digit'
-            ])
-            ->where([$tbl.'.id'=>Yii::$app->user->id])
-
-            ->joinWith(['pkg'=> function ($query) {
-                $query->select(['s_name','f_name','address']);
-            }])
-
-            ->joinWith(['digit'=> function ($query) {
-                $query->select(['nickname']);
-            }])
-            ->asArray()
-            ->one();
-
-        if(!$answer)
-            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
-
-        $real_present = ['f_name','s_name', 'address'];
-        $virtual_present = ['nickname', 'email'];
-
-        $real_client = ['f_name','s_name', 'address'];
-        $virtual_client = ['nickname'];
-
-        $rez['real_present'] = array_intersect_key($answer,array_flip($real_present));
-        $rez['real_present']['status'] = User::statusPresent($answer['status_pkg']);
-
-        $rez['virtual_present'] = array_intersect_key($answer,array_flip($virtual_present));
-        $rez['virtual_present']['status'] = User::statusPresent($answer['status_digit']);
-
-        $rez['real_client'] = (is_array($answer['pkg']))? array_intersect_key($answer['pkg'],array_flip($real_client)) : null;
-        $rez['virtual_client'] = (is_array($answer['digit']))? array_intersect_key($answer['digit'],array_flip($virtual_client)) : null;
-
-        return $rez;
-    }
-
-    /*
-     * Update usr info
-     */
-    public static function uptInfo($attr)
-    {
-        if(Yii::$app->user->isGuest)
-            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
-
-//        print_r($attr['user']);
-        $attr = json_decode($attr['user'],true);
-        $status_digit = $attr['virtual_present']['status'];
-        $status_pkg = $attr['real_present']['status'];
-
-        $attr = array_merge($attr['real_present'], $attr['virtual_present']);
-
-        $attrib = User::checkAttrUpdate();
-
-        if(sizeof($attrib) == 0)
-            throw new ExeptionJSON('Нельзя обновлять информацию в текущем статусе', ExeptionJSON::STATUS_ERROR);
-
-        $attr = array_intersect_key($attr,array_flip($attrib));
-
-        $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
-
-        if($answer === false)
-            throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
-
-        if($answer == 0)
-            throw new ExeptionJSON('Нет новых данных для обновления', ExeptionJSON::STATUS_ERROR);
-
-        User::userChangeStatus();
-        return $answer;
-    }
-
-    /*
-     * registration user
-     */
+ * registration user
+ */
     public static function signUsr($attr)
     {
         if(!Yii::$app->user->isGuest)
@@ -362,75 +280,72 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             throw new ExeptionJSON('Logout false', ExeptionJSON::STATUS_BAD);
     }
 
-    //вынести в общее
-    public static function reqRevision($req)
-    {
-         if(Yii::$app->request->method != $req)
-             throw new ExeptionJSON('Only '.$req, ExeptionJSON::STATUS_BAD);
-    }
-
-    /**
-     * get digit user
+    /*
+     * Information user
      */
-    public static function usrDigit()
+    public static function getInfo()
     {
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        if(!User::checkAccessPresent('digit'))
-            throw new ExeptionJSON('Не заполнены необходимые поля анкеты', ExeptionJSON::STATUS_ERROR);
+        $tbl = User::tableName();
+        $answer =  User::find()
+            ->select([
+                $tbl.'.id',$tbl.'.id_pkg',$tbl.'.id_digit',
+                $tbl.'.email', $tbl.'.f_name', $tbl.'.s_name',
+                $tbl.'.address', $tbl.'.nickname',
+                $tbl.'.status_pkg', $tbl.'.status_digit'
+            ])
+            ->where([$tbl.'.id'=>Yii::$app->user->id])
 
-        if(Yii::$app->user->identity->id_digit != 0)
-            throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
+            ->joinWith(['pkg'=> function ($query) {
+                $query->select(Yii::$app->params['presentAttr']['pkg']);
+            }])
 
-        $model = User::find()->select(['id','email','f_name'])->where(['AND',['status_digit'=>'1'],['id_digit' => '0']])->orderBy('RAND()')->one();
+            ->joinWith(['digit'=> function ($query) {
+                $query->select(Yii::$app->params['presentAttr']['digit']);
+            }])
+            ->asArray()
+            ->one();
 
-        if(!$model)
-            throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
+        if(!$answer)
+            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
 
-        $present = new Present();
-        $present -> from = Yii::$app->user->id;
-        $present -> to = $model->id;
-        $present -> type = 'digit';
-        $present -> status = 0;
-        $present -> date = date('Y-m-d H:i:s');
+        $rez = DataFormat::UserInfoFormat($answer);
 
-        if($present -> save())
-            User::updateAll(['id_digit' => $model->id],['id' => Yii::$app->user->id]);
-
-        return $model->nickname;
+        return $rez;
     }
 
-    /**
-     * get pkg user
+    /*
+     * Update usr info
      */
-    public static function usrPkg()
+    public static function uptInfo($attr)
     {
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        if(!User::checkAccessPresent('pkg'))
-            throw new ExeptionJSON('Не заполнены необходимые поля анкеты', ExeptionJSON::STATUS_ERROR);
+        //список атрибутов на изменение
+        $attr = DataFormat::parseUserInfoFormat($attr);
 
-        if(Yii::$app->user->identity->id_pkg != 0)
-            throw new ExeptionJSON('Поздравитель уже получен', ExeptionJSON::STATUS_ERROR);
+        //список атрибутов доступных для изменения
+        $attrib = User::checkAttrUpdate();
 
-        $model = User::find()->select(['id','s_name','f_name','address'])->where(['AND',['>=','status_pkg','2'],['id_digit' => '0']])->orderBy('RAND()')->one();
+        if(sizeof($attrib) == 0)
+            throw new ExeptionJSON('Нельзя обновлять информацию в текущем статусе', ExeptionJSON::STATUS_ERROR);
 
-        if(!$model)
-            throw new ExeptionJSON('На данный момент нет претендентов на получение подарка', ExeptionJSON::STATUS_ERROR);
+        $attr = array_intersect_key($attr,array_flip($attrib));
 
-        $present = new Present();
-        $present -> from = Yii::$app->user->id;
-        $present -> to = $model->id;
-        $present -> type = 'pkg';
-        $present -> status = 0;
-        $present -> date = date('Y-m-d H:i:s');
+        $answer =  User::updateAll($attr,['id'=>Yii::$app->user->id]);
 
-        if($present -> save())
-            User::updateAll(['id_pkg' => $model->id],['id' => Yii::$app->user->id]);
+        if($answer === false)
+            throw new ExeptionJSON('Ошибка обработки данных.', ExeptionJSON::STATUS_ERROR);
 
-        return [$model->f_name, $model->s_name, $model->address];
+        if($answer == 0)
+            throw new ExeptionJSON('Нет новых данных для обновления', ExeptionJSON::STATUS_ERROR);
+
+        // установить статус пользователя исходя из заполненности анкеты
+        User::userChangeStatus();
+        return $answer;
     }
 
     public static function checkAttrUpdate(){
@@ -464,17 +379,6 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return true;
     }
 
-    public static function statusPresent($status){
-
-        $stat = [
-            '0' => 'free',
-            '1' => 'verifying',
-            '2' => 'blocked',
-        ];
-
-        return $stat[$status];
-    }
-
     public static function userChangeStatus(){
 
         $attr = [];
@@ -485,5 +389,13 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             return User::updateAll($attr,['id'=>Yii::$app->user->id]);
 
         return false;
+    }
+
+    public static function userBan($id,$status = 0){
+
+        if(Yii::$app->user->can('moderator'))
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        return User::updateAll(['status' => $status],['id' => $id]);
     }
 }

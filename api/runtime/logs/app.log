@@ -502,3 +502,646 @@ Stack trace:
     ]
     'argc' => 2
 ]
+2014-11-18 12:12:09 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'The migration name should contain letters, digits and/or underscore characters only.' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:461
+Stack trace:
+#0 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('1-migrate')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('create', Array)
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('create', Array)
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate/create', Array)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate/create', Array)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#9 {main}
+2014-11-18 12:12:09 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416309129.57
+    'REQUEST_TIME' => 1416309129
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+        2 => '1-migrate'
+    ]
+    'argc' => 3
+]
+2014-11-18 12:43:15 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:43:15 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416310995.78
+    'REQUEST_TIME' => 1416310995
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 12:45:23 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:45:23 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416311123.45
+    'REQUEST_TIME' => 1416311123
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 12:45:28 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:45:28 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416311128.88
+    'REQUEST_TIME' => 1416311128
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 12:46:02 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:46:02 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416311162.14
+    'REQUEST_TIME' => 1416311162
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 12:46:13 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:46:13 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416311173.68
+    'REQUEST_TIME' => 1416311173
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 12:46:39 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 12:46:39 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416311199.52
+    'REQUEST_TIME' => 1416311199
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-11-18 13:02:08 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php:840
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(840): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+The SQL being executed was: SHOW FULL COLUMNS FROM `adm_migration`' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php:532
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(855): yii\db\Schema->convertException(Object(PDOException), 'SHOW FULL COLUM...')
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Command.php(350): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(198): yii\db\Command->queryAll()
+#3 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/mysql/Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#4 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/db/Schema.php(139): yii\db\mysql\Schema->loadTableSchema('adm_migration')
+#5 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/MigrateController.php(125): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#6 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(604): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#7 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(99): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#8 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#9 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#10 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Controller.php(150): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Controller.php(86): yii\base\Controller->runAction('', Array)
+#12 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php(462): yii\console\Controller->runAction('', Array)
+#13 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('migrate', Array)
+#14 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('migrate', Array)
+#15 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#17 {main}
+Additional Information:
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+2014-11-18 13:02:08 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'TERM_PROGRAM_VERSION' => '326'
+    'OLDPWD' => '/Applications/MAMP/htdocs/adm'
+    'TERM_SESSION_ID' => 'FFB12BCB-C71A-4632-8E91-562844791429'
+    'USER' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/Users/spiker/.composer/vendor/bin:/opt/local/bin:/opt/local/sbin:/Applications/MAMP/bin/php/php5.5.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin'
+    '__CHECKFIX1436934' => '1'
+    'PWD' => '/Applications/MAMP/htdocs/adm/api'
+    'LANG' => 'ru_RU.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/Users/spiker'
+    'LOGNAME' => 'spiker'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    'SECURITYSESSIONID' => '186a5'
+    '_' => '/opt/local/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416312128.66
+    'REQUEST_TIME' => 1416312128
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
