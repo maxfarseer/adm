@@ -103,6 +103,11 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             ->from(['digit' => User::tableName()]);
     }
 
+    public function getPresent()
+    {
+        return $this->hasOne(Present::className(), ['from' => 'id'])
+            ->from(['present' => Present::tableName()]);
+    }
     /**
      * @var array EAuth attributes
      */
@@ -236,6 +241,15 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         return new self($attributes);
     }
 
+    public static function statusUser($status) {
+
+        $stat = [
+            '0' => 'BAN',
+            '1' => 'ACTIVE',
+        ];
+
+        return $stat[$status];
+    }
     /*
  * registration user
  */
@@ -397,5 +411,50 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
         return User::updateAll(['status' => $status],['id' => $id]);
+    }
+
+    /*
+    * Information user
+    */
+    public static function getUsr($id = false)
+    {
+        if(Yii::$app->user->can('moderator'))
+            throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
+
+        $tbl = User::tableName();
+
+        $where = (!$id)?[$tbl.'.id_digit'=>0]:[$tbl.'.id'=>$id];
+
+        $answer =  User::find()
+            ->select([
+                $tbl.'.id',$tbl.'.id_pkg',$tbl.'.id_digit',
+                $tbl.'.email', $tbl.'.f_name', $tbl.'.s_name',
+                $tbl.'.address', $tbl.'.nickname',
+                $tbl.'.status_pkg', $tbl.'.status_digit',
+                $tbl.'.date_reg', $tbl.'.status'
+            ])
+            ->where($where)
+
+            ->joinWith(['pkg'=> function ($query) {
+                $query->select(Yii::$app->params['presentAttr']['pkg']);
+            }])
+
+            ->joinWith(['digit'=> function ($query) {
+                $query->select(Yii::$app->params['presentAttr']['digit']);
+            }])
+
+            ->joinWith(['present'=> function ($query) {
+                $query->select(['message','comment']);
+            }])
+
+            ->asArray()
+            ->all();
+
+        if(!$answer)
+            throw new ExeptionJSON('Ошибка получения данных', ExeptionJSON::STATUS_ERROR);
+
+        $rez = DataFormat::UserAdmFormat($answer);
+
+        return $rez;
     }
 }

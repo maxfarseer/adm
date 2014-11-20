@@ -159,3 +159,12 @@ BAN, BANOUT
  request
      POST api/ban
           api/banout
+          
+GETUSR
+data: ...
+
+request
+   GET api/getusr
+
+parameters
+    id / ''

@@ -239,6 +239,25 @@ class DefaultController extends ActiveController
     }
 
     /*
+     * baned
+     */
+    public function actionUsr()
+    {
+        Yii::$app->response->format = Response::FORMAT_JSON;
+
+        DataFormat::reqRevision('GET');
+
+        $id = Yii::$app->request->get('id')? Yii::$app->request->get('id'):false;
+
+        $data = User::getUsr($id);
+
+        $answer['data'] = $data;
+        $answer['status'] = ExeptionJSON::STATUS_OK;
+
+        return $answer;
+    }
+
+    /*
      * test method api
      */
     public function actionTest()

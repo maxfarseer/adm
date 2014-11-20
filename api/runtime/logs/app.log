@@ -1145,3 +1145,81 @@ Array
     ]
     'argc' => 2
 ]
+2014-11-18 17:19:38 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "--interactive=0".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('--interactive=0', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('--interactive=0', Array)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "--interactive=0".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('--interactive=0', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#3 {main}
+2014-11-18 17:19:38 [-][-][-][info][application] $_SERVER = [
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/spiker'
+    'USER' => 'spiker'
+    'LOGNAME' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    '__CHECKFIX1436934' => '1'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PHP_SELF' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'SCRIPT_NAME' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416331178.6055
+    'REQUEST_TIME' => 1416331178
+    'argv' => [
+        0 => '/Applications/MAMP/htdocs/adm/api/yii'
+        1 => '--interactive=0'
+    ]
+    'argc' => 2
+]
+2014-11-20 17:36:46 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "--interactive=0".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(161): yii\base\Module->runAction('--interactive=0', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('--interactive=0', Array)
+#2 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "--interactive=0".' in /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php:163
+Stack trace:
+#0 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/console/Application.php(137): yii\console\Application->runAction('--interactive=0', Array)
+#1 /Applications/MAMP/htdocs/adm/api/vendor/yiisoft/yii2/base/Application.php(371): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /Applications/MAMP/htdocs/adm/api/yii(23): yii\base\Application->run()
+#3 {main}
+2014-11-20 17:36:46 [-][-][-][info][application] $_SERVER = [
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'TMPDIR' => '/var/folders/k_/r4v244wn3ml7stkzyq4yv19r0000gn/T/'
+    'SHELL' => '/bin/bash'
+    'HOME' => '/Users/spiker'
+    'USER' => 'spiker'
+    'LOGNAME' => 'spiker'
+    'SSH_AUTH_SOCK' => '/tmp/launch-PJI8X9/Listeners'
+    'Apple_PubSub_Socket_Render' => '/tmp/launch-KBsbKN/Render'
+    'DISPLAY' => '/tmp/launch-cOFy1O/org.macosforge.xquartz:0'
+    '__CHECKFIX1436934' => '1'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:7:32'
+    'PHP_SELF' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'SCRIPT_NAME' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'PATH_TRANSLATED' => '/Applications/MAMP/htdocs/adm/api/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1416505006.7917
+    'REQUEST_TIME' => 1416505006
+    'argv' => [
+        0 => '/Applications/MAMP/htdocs/adm/api/yii'
+        1 => '--interactive=0'
+    ]
+    'argc' => 2
+]

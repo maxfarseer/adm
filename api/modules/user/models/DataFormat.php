@@ -55,6 +55,43 @@ class DataFormat extends Model {
     }
 
     /**
+     * encode userinfo
+     * @param $answer
+     * @return mixed
+     */
+    public static function UserAdmFormat($users){
+
+        $real_client = Yii::$app->params['presentAttr']['pkg'];
+        $virtual_client = Yii::$app->params['presentAttr']['digit'];
+        $info_client = ['id','email','f_name','s_name','address','nickname','date_reg'];
+
+        $rezult = [];
+
+        foreach($users as $answer) {
+
+
+
+//        $rez['info'] = array_intersect_key($answer,array_flip($real_present));
+//
+//        $rez['real_present'] = array_intersect_key($answer,array_flip($real_present));
+//        $rez['real_present']['status'] = Present::statusPresent($answer['status_pkg']);
+//
+//        $rez['virtual_present'] = array_intersect_key($answer,array_flip($virtual_present));
+//        $rez['virtual_present']['status'] = Present::statusPresent($answer['status_digit']);
+
+            $rez['info'] = array_intersect_key($answer,array_flip($info_client));
+            $rez['info']['status_real'] = Present::statusPresent($answer['status_pkg']);
+            $rez['info']['status_virtual'] = Present::statusPresent($answer['status_digit']);
+            $rez['info']['status'] = User::statusUser($answer['status']);
+
+            $rez['real_client'] = (is_array($answer['pkg']))? array_intersect_key($answer['pkg'],array_flip($real_client)) : null;
+            $rez['virtual_client'] = (is_array($answer['digit']))? array_intersect_key($answer['digit'],array_flip($virtual_client)) : null;
+
+            $rezult[] = $rez;
+        }
+        return $rezult;
+    }
+    /**
      * decode userinfo
      * @param $attr
      * @return array|mixed

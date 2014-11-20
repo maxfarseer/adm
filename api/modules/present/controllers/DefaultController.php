@@ -108,7 +108,7 @@ class DefaultController extends ActiveController
 
         Present::addMessage('digit',Yii::$app->request->post('data'));
 
-        $answer['data'] = ['Поздравление отправлено'];
+        $answer['data'] = 'Поздравление отправлено';
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;
@@ -125,7 +125,7 @@ class DefaultController extends ActiveController
 
         Present::addComment('pkg',Yii::$app->request->post('data'));
 
-        $answer['data'] = ['Комментарий оставлен'];
+        $answer['data'] = 'Комментарий оставлен';
         $answer['status'] = ExeptionJSON::STATUS_OK;
 
         return $answer;

@@ -94,6 +94,7 @@ $config = [
                 'commentreal' => 'present/default/pkgmsg',
                 'baned' => 'user/default/ban',
                 'banout' => 'user/default/banout',
+                'getusr' => 'user/default/usr',
 //                '<_a:(about|error)>' => 'main/default/<_a>',
 //                '<_a:(login|logout)>' => 'user/default/<_a>',
 

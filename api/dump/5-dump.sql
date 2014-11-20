@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.34)
 # Database: adm
-# Generation Time: 2014-11-18 11:33:13 +0000
+# Generation Time: 2014-11-20 17:46:30 +0000
 # ************************************************************
 
 
@@ -42,7 +42,7 @@ LOCK TABLES `adm_present` WRITE;
 
 INSERT INTO `adm_present` (`id`, `from`, `to`, `date`, `type`, `status`, `message`, `comment`)
 VALUES
-	(8,4,7,'2014-11-16 22:02:46','digit',0,NULL,NULL),
+	(8,4,6,'2014-11-16 22:02:46','digit',0,NULL,NULL),
 	(10,4,7,'2014-11-16 22:07:51','pkg',0,NULL,NULL);
 
 /*!40000 ALTER TABLE `adm_present` ENABLE KEYS */;
@@ -83,11 +83,11 @@ LOCK TABLES `adm_user` WRITE;
 
 INSERT INTO `adm_user` (`id`, `email`, `pass`, `role`, `status`, `ref`, `date_reg`, `date_login`, `f_name`, `s_name`, `address`, `id_pkg`, `status_pkg`, `id_digit`, `status_digit`, `good`, `nickname`)
 VALUES
-	(1,'123@ya.ru','123','123',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Олег','','г.Орел',2,0,3,0,0,NULL),
-	(2,'123@123.ru','$2y$13$SKiD1r3uxLUHbWQXMTN9FOMJoDqLdNRt2zZJL.IM434Vy957eOogG','moderator',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Паша','','г.Пенза',1,0,0,0,0,NULL),
-	(3,'1@1.ru','$2y$13$Nmn.x7BTSmCw2cpii4N10eDom5GpwAKVZ0lw8WoPrkddTfBlsSJRe','user',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Саша','','г.Липецк',1,0,0,0,0,NULL),
-	(4,'nikozor@ya.ru','$2y$13$lzGcqwRvJPARODAYjNUqFu7xlAWKI6Bi1n.778GAXlD.Rt1B841wi','user',1,'','0000-00-00 00:00:00','2014-11-16 22:46:56','Никита','Зорин','г.Киров',7,1,6,1,0,'Spiker!'),
-	(5,'nikozor@yandex.ru','$2y$13$.7gKUWt00o.CXGjXHCHeRumYeYmnDAJ4//aabVXf0auR2c7yOMVSe','user',1,'site','2014-10-28 10:31:10','0000-00-00 00:00:00','Даша','','г.Краснодар',1,0,0,0,0,NULL),
+	(1,'123@ya.ru','123','123',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Олег','','г.Орел',0,0,0,0,0,NULL),
+	(2,'123@123.ru','$2y$13$SKiD1r3uxLUHbWQXMTN9FOMJoDqLdNRt2zZJL.IM434Vy957eOogG','moderator',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Паша','','г.Пенза',0,0,0,0,0,NULL),
+	(3,'1@1.ru','$2y$13$Nmn.x7BTSmCw2cpii4N10eDom5GpwAKVZ0lw8WoPrkddTfBlsSJRe','user',1,'','0000-00-00 00:00:00','0000-00-00 00:00:00','Саша','','г.Липецк',0,0,0,0,0,NULL),
+	(4,'nikozor@ya.ru','$2y$13$lzGcqwRvJPARODAYjNUqFu7xlAWKI6Bi1n.778GAXlD.Rt1B841wi','user',1,'','0000-00-00 00:00:00','2014-11-20 21:25:26','Никита','Зорин','г.Киров',7,2,6,1,0,'Spiker!'),
+	(5,'nikozor@yandex.ru','$2y$13$.7gKUWt00o.CXGjXHCHeRumYeYmnDAJ4//aabVXf0auR2c7yOMVSe','user',1,'site','2014-10-28 10:31:10','0000-00-00 00:00:00','Даша','','г.Краснодар',0,0,0,0,0,NULL),
 	(6,'nikozor@bk.ru','$2y$13$DFyC8bLZLlQiQSUSnWu0lOQwTcsZjONN3onzYSYCZC3sNkLelnK.m','user',1,'site','2014-10-28 10:38:50','0000-00-00 00:00:00','Маша','','г.Ростов',0,2,0,1,0,'Маха'),
 	(7,'nikozor@123.ru','$2y$13$KYexvZlo3s8.zYvGDc6dAeiA/d3MbQs2lIZYipF/HQF33sxLl8pyu','user',1,'site','2014-10-28 10:42:32','0000-00-00 00:00:00','Галя','','г.Екатеринбург',0,2,0,1,0,'Gala');
 

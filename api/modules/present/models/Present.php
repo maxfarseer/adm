@@ -100,7 +100,7 @@ class Present extends \yii\db\ActiveRecord
         if(Present::createPresent($model->id,'digit'))
             User::updateAll(['id_digit' => $model->id],['id' => Yii::$app->user->id]);
 
-        return $model->nickname;
+        return ['nickname' => $model->nickname];
     }
 
     /**
@@ -137,7 +137,7 @@ class Present extends \yii\db\ActiveRecord
         if(Present::createPresent($model->id))
             User::updateAll(['id_pkg' => $model->id],['id' => Yii::$app->user->id]);
 
-        return [$model->f_name, $model->s_name, $model->address];
+        return ['f_name' => $model->f_name, 's_name' => $model->s_name, 'address' => $model->address];
     }
 
     public static function createPresent($id, $type = 'pkg'){
@@ -157,9 +157,8 @@ class Present extends \yii\db\ActiveRecord
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        $to = 'id_'.$type;
-
-        if(empty(Yii::$app->user->$to))
+        $to = Yii::$app->user->identity['id_'.$type];
+        if(empty($to))
                 throw new ExeptionJSON('Некому писать сообщение', ExeptionJSON::STATUS_ERROR);
 
         $answer = Present::updateAll(['message' => $message],['from' => Yii::$app->user->id, 'to' => $to,'type' => $type]);
@@ -175,9 +174,9 @@ class Present extends \yii\db\ActiveRecord
         if(Yii::$app->user->isGuest)
             throw new ExeptionJSON('Авторизуйтесь!', ExeptionJSON::NO_ACCESS);
 
-        $from = 'id_'.$type;
+        $from = Yii::$app->user->identity['id_'.$type];
 
-        if(empty(Yii::$app->user->$from))
+        if(empty($from))
             throw new ExeptionJSON('Некому писать комментарий', ExeptionJSON::STATUS_ERROR);
 
         $answer = Present::updateAll(['message' => $comment],['from' => $from, 'to' => Yii::$app->user->id,'type' => $type]);
