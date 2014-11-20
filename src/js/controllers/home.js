@@ -10,8 +10,10 @@ function homeCtrl($scope, $state, $cookieStore, restService, notify) {
       if (data.status === 200) {
         var profile = data.data;
         self.user = profile;
-        self.realpresent = profile.real_present ? true : false;
-        self.virtualpresent = profile.virtual_present ? true : false;
+        self.realPresent = profile.real_present ? true : false;
+        self.virtualPresent = profile.virtual_present ? true : false;
+        self.realClient = profile.real_client;
+        self.virtualClient = profile.virtual_client;
       } else {
         notify({message: data.data, classes: 'alert-danger'});
       }
@@ -57,6 +59,12 @@ function homeCtrl($scope, $state, $cookieStore, restService, notify) {
   this.getVirtualClient = function() {
     restService.getVirtualClient.load().$promise.then(function(data) {
       console.log(data);
+    });
+  };
+
+  this.sendVirtual = function(msg) {
+    restService.virtualPresent.send({data: msg}).$promise.then(function(data) {
+      notify(data.data);
     });
   };
 

@@ -11,9 +11,9 @@ div(ng-if="home.user")
       form.form-horizontal(name="profile", novalidate)
         .checkbox
           label
-            input(type="checkbox", ng-model="home.realpresent")
+            input(type="checkbox", ng-model="home.realPresent")
             | Я хочу получить реальный подарок
-        div.animate-if(ng-if="home.realpresent")
+        div.animate-if(ng-if="home.realPresent")
           .form-group(ng-class="{'has-error':profile.pName.$error.required}")
             label.control-label.col-sm-2(for="name") Имя
             .col-sm-6
@@ -43,9 +43,9 @@ div(ng-if="home.user")
               p.help-block 123000, Московская область, Москва, ул. Ленина 110, кв. 5.
         .checkbox
           label
-            input(type="checkbox", ng-model="home.virtualpresent")
+            input(type="checkbox", ng-model="home.virtualPresent")
             | Я хочу получить поздравительное сообщение
-        div.animate-if(ng-if="home.virtualpresent")
+        div.animate-if(ng-if="home.virtualPresent")
           .form-group(ng-class="{'has-error':profile.pDigit.$error.required || profile.pDigit.$error.email}")
             label.control-label.col-sm-2(for="digit") e-mail
             .col-sm-6
@@ -66,10 +66,26 @@ div(ng-if="home.user")
                 required="home.user.pDigitName")
 
     //- column 2
-    .col-md-6
+    .col-md-6(ng-if="!home.realClient.address")
       button.btn.btn-sm.btn-success(ng-click="home.getRealClient()") GetRealClient()
-    .col-md-6
+    .col-md-6(ng-if="!home.virtualClient.nickname")
       button.btn.btn-sm.btn-success(ng-click="home.getVirtualClient()") GetVirtualClient()
+    .col-md-6(ng-if="home.realClient.address")
+      h4 Инфо для отправки подарка
+      .col-md-4 Получатель:
+      .col-md-8 {{home.realClient.f_name}} {{home.realClient.s_name}}
+      .col-md-4 Адрес:
+      .col-md-8 {{home.realClient.address}}
+    .col-md-6(ng-if="home.virtualClient.nickname")
+      h4 Инфо для отправки онлайн сообщения
+      .col-md-4 Получатель:
+      .col-md-8 {{home.virtualClient.nickname}}
+      .col-md-8
+        textarea#virtualPresentText.form-control(
+          rows="2",
+          ng-model="home.user.virtual_client.message",
+          placeholder="Текст поздравительного сообщения")
+        button.btn.btn-sm.btn-success(ng-click="home.sendVirtual(home.user.virtual_client.message)") Отправить
 
   .row
     .col-md-6
@@ -77,7 +93,7 @@ div(ng-if="home.user")
         button.btn.btn-sm.btn-success(
           ng-click="home.userUpdate(home.user)",
           ng-disabled="!(profile.$dirty && profile.$valid)",
-          ng-show="home.realpresent || home.virtualpresent") Обновить
+          ng-show="home.realPresent || home.virtualPresent") Обновить
 
 .row
   .col-md-12

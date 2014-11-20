@@ -64,6 +64,10 @@ function restService($resource) {
       }),
       getVirtualClient: $resource(rootLink + '/api/getvirtual', {}, { // получтаель виртуального подарка
         load: {method: 'GET'}
+      }),
+      virtualPresent: $resource(rootLink + '/api/sendvirtual', {}, {
+        send: {method: 'POST', transformRequest: transformRequest}
+        //recieve: {method: 'GET'}
       })
     };
 
